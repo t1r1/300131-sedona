@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Фото и видео</title>
+</head>
+<body>
+	<header class="page-header">
+		<div class="page_header__logo">
+				<a href="index.html" class="top_menu__link">
+					<img width="102" height="83" alt="City of Sedona" class="top_menu__picture" src="http://placehold.it/102x83">
+				</a>
+		</div>
+
+		<nav class="main-nav main-nav--opened">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main_nav__wrapper">
+				<ul class="main-nav__items">
+				<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
+					<li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
+					<li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a></li>
+				</ul>
+			</div>				
+		</nav>
+	</header>
+
+	<div class="promo">
+		<div class="container">		
+				<img src="" class="promo__introtitle" alt='Welcome to the gorgeous'>
+					<h1 class="promo__title">Sedona</h1>
+					<p class="promo__subtitle">"Because the Grand Canyon sucks!"</p> 
+		</div>
+	</div>
+
+	<article class="photo">
+		<div class="features">
+			<div class="features__item features__item--white">
+				<section class="features__content"> <!--могут ли у section в рамках одного сайта совпадать классы или они должны быть уникальными несмотря на однотипность блоков? Я проходила на сайте Академии курс по HTML5, но мне это не помогло =) -->
+					<h3 class="features__title">Фото и видео</h3>
+						<p class="features__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+				</section>
+			</div>
+	
+
+		<div class="features">
+			<div class="features__item features__item--white">
+				<section class="features__content">
+					<div class="features__item features__image features__image--photo"> <!--Этот момент для меня не однозначен. У меня уже есть блок features__image для картинок на главной страницы, там картинка занимает всю ширину контейнера. Я использую здесь модификатор photo, чтобы убрать заполнение контейнера шириной целиком и сделать отступы, но не уверена, что так правильно. Не нужен ли здесь вообще отдельный класс? или класс нужен у картинки? или здесь ненужно столько всего городить и достаточно обойтись 2-мя классами: один у блока, другой у картинки?-->
+						<img src="http://placehold.it/280x280" alt="Photo1">
+					</div>
+
+					<div class="features__item"><!--здесь я конкретно затупила - явно какой-то reusable блок из уже описанных можно использовать для подписи к фото, но какой?-->
+						<h3 class="features__title">Неродные просторы</h3>
+							<p class="features__description">Автор фото: Борис</p>
+					</div>
+
+					<div class="likes__img">
+						<img src="http://placehold.it/22x20" alt="icon-like.svg">
+					</div>
+
+					<div class="likes__number">
+						<h3 class="features__title">1350</h3> <!--не нужен ли здесь модификатор? формально стиль тот же, но элемент другой, который, вероятно, будет обновляться динамически-->
+					</div>
+				</section>
+			</div>
+
+			<div class="features__item features__item--white">
+				<section class="features__content">
+					<div class="features__item features__image features__image--photo"> 
+						<img src="http://placehold.it/280x280" alt="Photo2">
+					</div>
+
+					<div class="features__item">
+						<h3 class="features__title">Местная растительность</h3>
+							<p class="features__description">Автор фото: Сергей</p>
+					</div>
+
+					<div class="likes__img">
+						<img src="http://placehold.it/22x20" alt="icon-like.svg">
+					</div>
+					
+					<div class="likes__number">
+						<h3 class="features__title">143</h3>
+					</div>
+				</section>
+			</div>
+
+
+			<div class="features__item features__item--white">
+				<section class="features__content">
+					<div class="features__item features__image features__image--photo"> 
+						<img src="http://placehold.it/280x280" alt="Photo3">
+					</div>
+
+					<div class="features__item">
+						<h3 class="features__title">Дорога на Север</h3>
+							<p class="features__description">Автор фото: Петр</p>
+					</div>
+
+					<div class="likes__img">
+						<img src="http://placehold.it/22x20" alt="icon-like.svg">
+					</div>
+					
+					<div class="likes__number">
+						<h3 class="features__title">96</h3>
+					</div>
+				</section>
+			</div>
+
+
+			<div class="features__item features__item--white">
+				<section class="features__content">
+					<div class="features__item features__image features__image--photo"> 
+						<img src="http://placehold.it/280x280" alt="Photo4">
+					</div>
+
+					<div class="features__item">
+						<h3 class="features__title">Мост Дьявола</h3>
+							<p class="features__description">Автор фото: Антон</p> 
+					</div>
+
+					<div class="likes__img">
+						<img src="http://placehold.it/22x20" alt="icon-like.svg">
+					</div>
+					
+					<div class="likes__number">
+						<h3 class="features__title">254</h3>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</article>
+
+
+	<section class="video"> 
+		<div class="video__wrapper"> <!--этот блок полностью аналогичен блоку booking на главной, стоит ли реиспользовать его?-->
+			<h2 class="video__title">Заинтересовались?</h2> <!--аналогично, уже есть класс booking__title, описывающий заголовок такого стиля - стоит ли реиспользовать его, а заодно и назвать более универсально?-->
+			<p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+		</div>
+
+		<div class="video_content">
+			<img src="http://placehold.it/320x201" alt="Видео">  <!--аналогично: нужен видео и заменяющей его картинке свой класс или достаточно класса у section?-->
+		</div>
+	</section>
+	
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="page-footer__top">
+				<h2 class="booking__title">#Visitsedona</h2>
+			</div>
+			<div class="social">
+				<a href="#" class="social__btn">Twitter</a>
+				<a href="#" class="social__btn">Facebook</a>
+				<a href="#" class="social__btn">Youtube</a>
+			</div>
+			<div class="page-footer__copyright">
+				<a href="https://htmlacademy.ru">Разработано <span class="page-footer__copyrightimg"></span></a> <!--этот span для логотипа Академии, не уверена в правильном названии класса элемента по методологии-->
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
