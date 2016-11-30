@@ -6,12 +6,6 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="page_header__logo">
-				<a href="index.html" class="top_menu__link">
-					<img width="102" height="83" alt="City of Sedona" class="top_menu__picture" src="http://placehold.it/102x83">
-				</a>
-		</div>
-
 		<nav class="main-nav main-nav--opened">
 			<button class="main-nav__toggle" type="button">Открыть меню</button>
 			<div class="main_nav__wrapper">
@@ -23,126 +17,88 @@
 				</ul>
 			</div>				
 		</nav>
+		<div class="page_header__top-row">
+				<a href="index.html" class="top_menu__link">
+					<img class="top_menu__picture" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
+				</a>
+		</div>
 	</header>
-
-		<!--нужен ли у промо-блока тег section? и какой тогда у него класс? фантазия не работает ) и дальше у "Sedona" - нужен ли header?-->
-
-	<div class="promo">
-		<div class="container">		
-				<img src="" class="promo__introtitle" alt='Welcome to the gorgeous'>
-					<h1 class="promo__title">Sedona</h1>
-					<p class="promo__subtitle">"Because the Grand Canyon sucks!"</p> <!--здесь была попытка использовать blockquote, но не прошло валидацию-->
-		</div>
+	<div class="promo__title">
+		<img  class="promo__title promo__title--index" src="http://placehold.it/" alt='Welcome to the gorgeous'>
 	</div>
-
-	<article class="content"><!--правильно ли здесь использовать article?-->
-		<div class="features">
-			<div class="features__item features__item--white">
-				<section class="features__content"> <!--а для каждого блока с контентом - section?-->
-					<h3 class="features__title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h3>
-						<p class="features__description">Расмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-				</section>
+	<main class="page-main">
+		<div class="intro">
+			<H1 class="intro-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</H1>
+			<p class="intro__text">Расмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+		</div>
+		<section class="features">
+			<div class="features__item">
+				<h2 class="features__title">Настоящий городок</h2>
+					<span class="features__number">-№1</span>
+						<p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+			</div>
+			<div class="features__pic"> 
+				<img src="http://placehold.it/320x250" width="320" height="250" alt="Картинка с флагами">
+			</div>
+			<div class="advantages">
+				<div class="advantages__item">
+					<h2 class="advantages__title--living">Жилье</h2>
+					<p class="advantages__text">Рекомендуем пожить как в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="advantages__item">
+					<h2 class="advantages__title--souvenirs">Сувениры</h2>
+					<p class="advantages__text">Не только китайского, но и местного производства!</p>
+				</div>
+				<div class="advantages__item">
+					<h2 class="advantages__title--food">Еда</h2>
+					<p class="advantages__text">сегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</div>
+			</div>
+			<div class="features__item">
+				<h2 class="features__title">Там есть мост дьявола</h2>
+					<span class="features__number">-№2-</span>
+						<p class="features__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+			</div>
+			<div class="features__pic"> 
+				<img src="http://placehold.it/320x250" width="320" height="250" alt="Картинка с каньоном">
+			</div>
+			<div class="advantages advantages--gray-bg">
+				<div class="advantages__item">
+					<h2 class="advantages__title">Небольшая площадь</h2>
+						<span class="features__number">-№3</span>
+							<p class="advantages__text">Все достопримечательности находятся очень близко</p>
+				</div>
+				<div class="advantages__item">
+					<h2 class="advantages__title">Красивая дорога</h2>
+						<span class="features__number">-№4</span>
+							<p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+				<div class="advantages__item">
+					<h2 class="advantages__title">Мало туристов</h2>
+						<span class="features__number">-№5</span>
+							<p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+				</div>
 			</div>
 
-				<div class="features__item features__item--dark">
-					<section class="features__content">
-						<h3 class="features__title">Настоящий городок</h3>
-						<p class="features__description">-№1-</p>
-						<p class="features__description">
-					Седона не аттракцион для туристов, там течет своя жизнь</p>
-
-						<img class="features__item features__image" src="http://placehold.it/320x250" width="320" height="250" alt="Картинка с флагами"><!--нужно ли оформлять фотографии отдельными дивами или они нормально живут в составе features_item?-->
-					</section>
-				</div>
-
-				<ul class="advantages">
-					<li class="features__item features__item-white"> <!--white - это модификатор для блоков на светлом фоне и с темным шрифтом, а dark - для блоков на голубом фоне со светлым шрифтом. Корректно ли так делать? -->
-						<div class="features__item features_icon--housing"> <!--контейнер жддля иконки, иконка будет задана через background-image-->
-							<h3 class="features__title">Жилье</h3> <!--не уверена в правильности названия класса. I mean, нет ли здесь ошибки - "пропавшего" имени класса основного блока (features__item)? согласно методологии, делать features__item__title - нельзя. возможно, нужны два класса? -->
-						</div>
-						<div class="features__item features_tip">
-							<p class="features__description">Рекомендуем пожить как в настоящем мотеле, все как в кино!</p>
-						</div>
-					</li>
-					<li class="features__item features__item-white"> 
-						<div class="features__item features_icon--souvenirs"> 
-							<h3 class="features__title">Сувениры</h3> 
-						</div>
-						<div class="features__item features_tip">
-							<p class="features__description">Не только китайского, но и местного производства!</p>
-						</div>
-					</li>
-					<li class="features__item features__item-white"> 
-						<div class="features__item features_icon--food"> 
-							<h3 class="features__title">Еда</h3>
-						</div>
-						<div class="features__item features_tip">
-							<p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-						</div>
-					</li>
-				</ul>
-
-				<div class="features__item features__item--gray features__item--borderbottom">
-					<section class="features__content">
-						<h3 class="features__title">Небольшая площадь</h3>
-						<p class="features__description">-№3-</p>
-						<p class="features__description">
-					Все достопримечательности находятся очень близко</p>
-					</section>
-				</div>
-
-				<div class="features__item features__item--gray features__item--borderbottom">
-					<section class="features__content">
-						<h3 class="features__title">Красивая дорога</h3>
-						<p class="features__description">-№4-</p>
-						<p class="features__description">
-					Ехать в седону из Лас-Вегаса совсем не скучно</p>
-					</section>
-				</div>
-
-				<div class="features__item features__item--gray features__item--borderbottom">
-					<section class="features__content">
-						<h3 class="features__title">Мало туристов</h3>
-						<p class="features__description">-№5-</p>
-						<p class="features__description">
-					Большинство едет в Гранд Каньон и толпится там</p>
-					</section>
-				</div>
-
-		</div>
-	</article>
-
-	<section class="booking">
-		<div class="booking__wrapper">
-			<h2 class="booking__title">Заинтересовались?</h2>
-			<p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+		</section>
+		</main>
+	<div class="booking">
+			<b class="booking__title">Заинтересовались?</b>
+			<p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<a class="booking__search btn" href="#">Найти гостиницу</a>
-		</div>
-	</section>
-
-	<section class="map">
-		<div class="map_content">
-			<img src="http://placehold.it/320x350" alt="Карта">  <!--нужен ли картинке с картой какой-то класс или достаточно класса у section?-->
-		</div>
-	</section>
-
-	
+	</div>
+	<div class="map_content">
+	</div>
 	<footer class="page-footer">
-		<div class="container">
-			<div class="page-footer__top">
-				<h2 class="booking__title">#Visitsedona</h2>
-			</div>
-			<div class="social">
-				<a href="#" class="social__btn">Twitter</a>
-				<a href="#" class="social__btn">Facebook</a>
-				<a href="#" class="social__btn">Youtube</a>
-			</div>
-			<div class="page-footer__copyright">
-				<a href="https://htmlacademy.ru">Разработано <span class="page-footer__copyrightimg"></span></a> <!--этот span для логотипа Академии, не уверена в правильном названии класса элемента по методологии-->
-			</div>
+		<a class="page-footer__hashtag">#Visitsedona</a>
+		<div class="page-footer__social">
+					<a href="#" class="social__btn--tw">Twitter</a>
+					<a href="#" class="social__btn--fb">Facebook</a>
+					<a href="#" class="social__btn--yt">Youtube</a>
 		</div>
+		<div class="copyright">
+				Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="" alt="HTML Academy"></a> 
+		</div>	
 	</footer>
-
-
 </body>
 </html>

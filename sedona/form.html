@@ -6,12 +6,6 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="page_header__logo">
-				<a href="index.html" class="top_menu__link">
-					<img width="102" height="83" alt="City of Sedona" class="top_menu__picture" src="http://placehold.it/102x83">
-				</a>
-		</div>
-
 		<nav class="main-nav main-nav--opened">
 			<button class="main-nav__toggle" type="button">Открыть меню</button>
 			<div class="main_nav__wrapper">
@@ -23,123 +17,96 @@
 				</ul>
 			</div>				
 		</nav>
+
+		<div class="page_header__top-row">
+				<a href="index.html" class="top_menu__link">
+					<img class="top_menu__picture" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
+				</a>
+		</div>
 	</header>
 
 	<div class="promo">
-		<div class="container">		
-				<img src="http://placehold.it/" class="promo__introtitle" alt='Welcome to the gorgeous'>
-					<h1 class="promo__title">Sedona</h1>
-					<p class="promo__subtitle">"Because the Grand Canyon sucks!"</p> 
-		</div>
+		<img  class="promo__introtitle" src="http://placehold.it/" alt='Welcome to the gorgeous'>
 	</div>
 
-	<article class="content"> 
-		<div class="features">
-			<div class="features__item features__item--white">
-				<section class="features__content"> 
-					<h3 class="features__title">Оставьте свой отзыв</h3>
-						<p class="features__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-				</section>
+	<main class="page-main">
+		<div class="intro">
+			<H1 class="intro-title">Оставьте свой отзыв</H1>
+			<p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+		</div>
+
+	<form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
+		<fieldset class="review-form__item">
+			<legend class="review-form__title">Представьтесь:</legend>
+				<div class="review-form__group">
+					<label class="review-form__label" for="name">Имя*:</label>
+							<input class="review-form__input" type="text" id="name" placeholder="Петр" required=""></input>
+					<label class="review-form__label" for="familyname">Фамилия:</label>
+						<input class="review-form__input" type="text" id="familyname" placeholder="Иванов" required=""></input>
+					<label class="review-form__label" for="middlename">Отчество:</label>
+						<input class="review-form__input" type="text" id="middlename" placeholder="Александрович"></input>
+				</div>
+		</fieldset>
+
+		<fieldset class="review-form__item">
+			<legend class="review-form__title">Контактная информация:</legend>
+				<div class="review-form__group review-form__group--tel">
+					<label class="review-form__label" for="tel">Контактный телефон*:</label>
+						<input class="review-form__input" type="tel" id="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="Введите телефон" required></input>
+							<small class="survey-form__error">Ошибка, перепроверьте номер</small>
+				</div>
+				<div class="review-form__group review-form__group--email">
+					<label class="review-form__label" for="email">Электронная почта*:</label>
+						<input class="review-form__input" type="email" class="" id="email" placeholder="Введите e-mail" required></input>
+				</div>
+		</fieldset>
+
+		<fieldset class="review-form__item">
+			<legend class="review-form__title">Ваше общее впечатление:</legend>
+			<div class="review-form__group">
+				<input type="radio" class="review-form__input-radio" name="impression" id="positive" value="positive" checked></input>
+					<label class="review-form__label-radio" for="positive">Скорее положительное</label>
+				<input type="radio" class="review-form__input-radio" name="impression"  id="negative" value="negative"></input>
+					<label class="review-form__label-radio" for="negative">Скорее отрицательное</label>
+				<input type="radio" class="review-form__input-radio" name="impression"  id="neutral" value="neutral"></input>
+					<label class="review-form__label-radio" for="neutral">Затрудняюсь ответить</label>
 			</div>
+		</fieldset>
 
-			<div class="features__item features__item--white"> <!--полагаю, в этих блоках нужен свой модификатор для рамки, так как она отличается от рамок в блоках на других страницах. это так?-->
-				<h3 class="features__title">Представьтесь:</h3>
-						<form class="survey-form" action="#" method="post">
-							<div class="survey-form__item">
-								<label for="name">Имя*:</label>
-								<input class="survey-form__input" type="text" name="name" placeholder="Петр" required=""></input>
-							</div>
-
-							<div class="survey-form__item"> 
-								<label for="familyname">Фамилия:</label>
-								<input class="survey-form__input" type="text" name="familyname" placeholder="Иванов" required=""></input>
-							</div>
-
-							<div class="survey-form__item"> 
-								<label for="middlename">Отчество:</label>
-								<input class="survey-form__input" type="text" name="middlename" placeholder="Александрович"></input>
-							</div>
-							
-							<!--нужно ли использовать legend для заголовков каждоого блока и fieldset для логической разметки или достаточно того, что поля формы разнесены по блокам?-->					
-					
+		<fieldset class="review-form__item">
+			<legend class="review-form__title">Посещенные достопримечательности:</legend>
+			<div class="review-form__group">
+				<input type="checkbox" class="review-form__input-check" id="bridge" checked></input>
+					<label for="bridge" class="review-form__label-check">Мост Дьявола</label>
+				<input type="checkbox" class="review-form__input-check" id="park" checked></input>
+					<label for="park" class="review-form__label-check">Слайд-парк</label>
+				<input type="checkbox" class="review-form__input-check" id="mountain"></input>
+					<label for="mountain" class="review-form__label-check">Гора-Колокол</label>
+				<input type="checkbox" class="review-form__input-check" id="redcliff" checked></input>
+					<label for="redcliff" class="review-form__label-check">Красные скалы</label>
 			</div>
+		</fieldset>
 
-			<div class="features__item features__item--white">
-				<h3 class="features__title">Контактная информация:</h3>
-					<!--для иконок с телефоном и мэйлом в строках использую модификаторы-->
-					<div class="survey-form__item"> 
-						<p class="features__description"><label for="tel">Контактный телефон*:</label></p>
-						<input type="tel" class="survey-form__input survey-form__input--phone" name="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="Введите телефон" required=""></input>
-						<p class="survey-form__error">Ошибка, перепроверьте номер</p>
-					</div>
-					<div class="survey-form__item"> 
-						<p class="features__description"><label for="email">Электронная почта*:</label></p>
-						<input type="email" class="survey-form__input survey-form__input--email" name="email" placeholder="Введите e-mail" required=""></input>
-
-					</div>
-			</div>
-
-			<div class="features__item features__item--white">
-				<h3 class="features__title">Ваше общее впечатление:</h3>
-					<div class="survey-form__item"> 
-						<label><input type="radio" class="survey-form__input survey-form__input--radio" name="impression" value="positive" checked>Скорее положительное</label>
-					</div>
-					<div class="survey-form__item"> 
-						<label><input type="radio" class="survey-form__input survey-form__input--radio" name="impression" value="negative">Скорее отрицательное</label>
-					</div>
-					<div class="survey-form__item"> 
-						<label><input type="radio" class="survey-form__input survey-form__input--radio" name="impression" value="neutral">Затрудняюсь ответить</label>
-					</div>
-			</div>
-				<!--модификатор для выбранного элемента не делаю, так как есть атрибут checked и можно стилизовать через него. а нужен ли модификатор?-->
-				
-
-			<div class="features__item features__item--white">
-				<h3 class="features__title">Посещенные достопримечательности:</h3>
-					<div class="survey-form__item"> 
-						<label><input type="checkbox" class="survey-form__input--checkbox" checked>Мост Дьявола</label>
-					</div>
-					<div class="survey-form__item"> 
-						<label><input type="checkbox" class="survey-form__input--checkbox" checked>Слайд-парк</label>
-					</div>
-					<div class="survey-form__item"> 
-						<label><input type="checkbox" class="survey-form__input--checkbox">Гора-Колокол</label>
-					</div>
-					<div class="survey-form__item"> 
-						<label><input type="checkbox" class="survey-form__input--checkbox" checked>Красные скалы</label>
-					</div>
-			</div>
-
-			<div class="features__item features__item--white">
-				<h3 class="features__title">Опишите свои эмоции</h3>
-					<div class="survey-form__item"> 
-						<textarea class="survey-form__input--textarea" cols='25' rows="7">Опишите подробно все свои восторги</textarea>
-					</div>
-					<div class="survey-form__item"> 
-						<button type="submit" class="survey-form__submit btn">Отправить отзыв</button>
-					</div>
-			<div>
-
-				</form>
-		</div> <!--конец блока с фичами-->
-	</article>
-	
+		<fieldset class="review-form__item">
+			<legend class="review-form__title">Опишите свои эмоции</legend>
+				<textarea class="survey-form__input--textarea" rows="7" placeholder="Опишите подробно все свои восторги"></textarea>
+		</fieldset>
+		<div class="review-form__footer"> 
+			<button type="submit" class="review-form__btn btn">Отправить отзыв</button>
+		</div>
+	</form>
+	</main>
+		
 	<footer class="page-footer">
-		<div class="container">
-			<div class="page-footer__top">
-				<h2 class="booking__title">#Visitsedona</h2>
-			</div>
-			<div class="social">
-				<a href="#" class="social__btn">Twitter</a>
-				<a href="#" class="social__btn">Facebook</a>
-				<a href="#" class="social__btn">Youtube</a>
-			</div>
-			<div class="page-footer__copyright">
-				<a href="https://htmlacademy.ru">Разработано <span class="page-footer__copyrightimg"></span></a> <!--этот span для логотипа Академии, не уверена в правильном названии класса элемента по методологии-->
-			</div>
+		<a class="page-footer__hashtag">#Visitsedona</a>
+		<div class="page-footer__social">
+					<a href="#" class="social__btn--tw">Twitter</a>
+					<a href="#" class="social__btn--fb">Facebook</a>
+					<a href="#" class="social__btn--yt">Youtube</a>
+		</div>
+		<div class="copyright">
+				Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="" alt="HTML Academy"></a> 
 		</div>
 	</footer>
-
-
 </body>
 </html>
