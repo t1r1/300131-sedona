@@ -1,4 +1,4 @@
-.booking{
+.booking {
     display: block;
     text-align: center;
     padding: 20px;
@@ -6,7 +6,12 @@
     
 }
 
-.booking__title{
+.booking__title {
     font-family: $font-main;
     font-size: 21px;
+}
+
+.booking__search {
+    padding: 15px 0;
+    font-weight: bold;
 }

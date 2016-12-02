@@ -11,14 +11,7 @@
 	background-color: $light-blue;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	color: $white;
-	&:hover, &focus{
-		background-color: #669ec0;
-	}
-
-	&:active{
-		background-color: #5496bd;
-	}
+	fill: #fff;
 }
 
 .social__btn--tw{
