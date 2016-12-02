@@ -45,7 +45,7 @@
   font-size: 21px;
   font-weight: bold;
   margin: auto;
-  text-transform: uppercase;
+  @include capslock();
   margin: 20px;
 
 }

@@ -1,12 +1,12 @@
-@import "normalize.scss";
+@import "normalize";
 @import "variables";
-@import "fonts.scss";
+@import "mixins";
+@import "fonts";
+@import "base";
 
-@import "base.scss";
-
-@import "blocks/advantages.scss";
-@import "blocks/booking.scss";
-@import "blocks/btn.scss";
+@import "blocks/advantages";
+@import "blocks/booking";
+@import "blocks/btn";
 @import "blocks/copyright";
 @import "blocks/features";
 @import "blocks/intro";

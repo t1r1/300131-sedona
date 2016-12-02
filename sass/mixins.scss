@@ -1,0 +1,8 @@
+@mixin debug() {
+    border: 1px solid darkred;
+
+}
+
+@mixin capslock{
+    text-transform: uppercase;
+}
