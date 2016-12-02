@@ -1,0 +1,19 @@
+.btn{
+	display: block;
+	width: 100%;
+	background-color: $light-blue;
+	text-transform: uppercase;
+	text-align: center;
+	color: $white;
+	padding: 15px;
+	font-size: 21px;
+	font-family: $font-main;
+
+	&:hover, &focus{
+		background-color: #669ec0;
+	}
+
+	&:active{
+		background-color: #5496bd;
+	}
+}

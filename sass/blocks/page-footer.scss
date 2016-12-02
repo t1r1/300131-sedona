@@ -1,0 +1,15 @@
+.page-footer__social{
+	display: inline-block;
+	width: 100%;
+	background-color: $bg-color-main;
+	text-align: center;
+	color: $light-blue;
+	&:hover, &focus{
+		background-color: #669ec0;
+	}
+
+	&:active{
+		background-color: #5496bd;
+	}
+}
+}
