@@ -1,3 +1,65 @@
+fieldset {
+    border: 0;
+}
+
+form {
+    border-top: 1px solid $grey;
+}
+
+.review-form {
+    display: block;
+    text-align: center;
+    @include capslock();
+
+}
+
+.review-form__item {
+    border-bottom: 1px solid $grey;
+    padding: 20px 20px;
+    
+}
+
+
+.review-form__group {
+    text-align: center;
+
+}
+
+.review-form__input,
+.review-form__label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.review-form__label {
+    float: left;
+    margin-right: 10px;
+}
+
+.review-form__input {
+    font-weight: bold;
+    color: $black;
+  
+}
+
+.review-form__title {
+    text-align: center;
+	height: 40px;
+	margin: 10px 20px;
+	line-height: 130%;
+    font-weight: bold;
+}
+
+
+
+.review-form__footer{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    @include capslock();
+    
+}
+
 .review-form__btn{
     @include btn-style();
 }
