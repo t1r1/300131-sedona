@@ -12,6 +12,5 @@
 }
 
 .booking__search {
-    padding: 15px 0;
-    font-weight: bold;
+    @include btn-style();
 }

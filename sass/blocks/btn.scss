@@ -2,18 +2,10 @@
 	display: block;
 	width: 100%;
 	background-color: $light-blue;
-	text-transform: uppercase;
+	@include capslock();
 	text-align: center;
 	border-style: none;
 	color: $white;
-	font-size: 21px;
+	font-size: 18px;
 	font-family: $font-main;
-
-	&:hover, &focus{
-		background-color: #669ec0;
-	}
-
-	&:active{
-		background-color: #5496bd;
-	}
 }

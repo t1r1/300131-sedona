@@ -1,0 +1,30 @@
+.main-nav{
+    position: relative;
+}
+
+.main-nav__items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav__link {
+    font-weight: bold;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+    padding: 15px 0;
+}
+
+.main-nav__item:last-child .main-nav__link {
+     border-bottom: none;
+}
+
+.main-nav__item:first-child .main-nav__link {
+     border-top: none;
+}
+
+.main-nav__toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
