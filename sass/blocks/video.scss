@@ -1,0 +1,16 @@
+.video { 
+    display: block;
+    text-align: center;
+    padding: 20px;
+    @include capslock();
+}
+
+.video__title{
+    @include btn-style();
+
+}
+
+.video__text {
+    margin: 30px 20px;
+}
+

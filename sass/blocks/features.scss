@@ -1,0 +1,9 @@
+.features {
+    @include feature-style();
+    background-color: $light-blue;
+}
+
+.features__item {
+    padding: 30px;
+    color: $white;
+}

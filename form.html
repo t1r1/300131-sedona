@@ -2,27 +2,27 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Форма</title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<nav class="main-nav main-nav--opened">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
-				<ul class="main-nav__items">
-					<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-					<li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
-					<li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
-					<li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a></li>
-				</ul>		
+			<ul class="main-nav__items">
+					<li class="main-nav__item"><a href="index.html" class="main-nav__link btn">Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html" class="main-nav__link btn">Фото и видео</a></li>
+					<li class="main-nav__item"><a href="form.html" class="main-nav__link btn">Форма отзыва</a></li>
+					<li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link btn">HTML Academy</a></li>
+				</ul>	
+				<a class="main-nav__toggle"><img class "main-nav__cross-img" src="/img/icon-cross.svg"></a>	
 		</nav>
 		<div class="page_header__top-row">
-				<a href="index.html" class="logo">
-					<img src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
-				</a>
+			<a href="index.html" class="logo"></a>
 		</div>
 	</header>
 	<div class="promo">
-		<img  class="promo__title" src="http://placehold.it/" alt='Welcome to the gorgeous'>
+		<img class="promo__title promo__title--index" src="/img/text-sedona-index.svg" alt='Welcome to the gorgeous'>
 	</div>
 	<main class="page-main">
 		<div class="intro">
@@ -79,7 +79,7 @@
 		</fieldset>
 		<fieldset class="review-form__item">
 			<legend class="review-form__title">Опишите свои эмоции</legend>
-				<textarea class="survey-form__input--textarea" rows="7" placeholder="Опишите подробно все свои восторги"></textarea>
+				<textarea class="review-form__input--textarea" rows="7" placeholder="Опишите подробно все свои восторги"></textarea>
 		</fieldset>
 		<div class="review-form__footer"> 
 			<button type="submit" class="review-form__btn btn">Отправить отзыв</button>
@@ -89,13 +89,13 @@
 	<footer class="page-footer">
 		<a class="page-footer__hashtag">#Visitsedona</a>
 		<div class="page-footer__social">
-					<a href="#" class="social__btn--tw">Twitter</a>
-					<a href="#" class="social__btn--fb">Facebook</a>
-					<a href="#" class="social__btn--yt">Youtube</a>
+			<a href="#" class="btn social__btn social__btn--tw" alt="Twitter"></a>
+			<a href="#" class="btn social__btn social__btn--fb" alt="Facebook"></a>
+			<a href="#" class="btn social__btn social__btn--yt" alt="Youtube"></a>
 		</div>
 		<div class="copyright">
-				Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="" alt="HTML Academy"></a> 
-		</div>
+			Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="/img/htmlacademy.svg" alt="HTML Academy"></a> 
+		</div>	
 	</footer>
 </body>
 </html>

@@ -2,27 +2,27 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sedona index</title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<nav class="main-nav main-nav--opened">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
 				<ul class="main-nav__items">
-					<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-					<li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
-					<li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
-					<li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a></li>
-				</ul>			
+					<li class="main-nav__item"><a href="index.html" class="main-nav__link btn">Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html" class="main-nav__link btn">Фото и видео</a></li>
+					<li class="main-nav__item"><a href="form.html" class="main-nav__link btn">Форма отзыва</a></li>
+					<li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link btn">HTML Academy</a></li>
+				</ul>	
+				<a class="main-nav__toggle"><img class "main-nav__cross-img" src="/img/icon-cross.svg"></a>		
 		</nav>
 		<div class="page_header__top-row">
-			<a href="index.html" class="logo">
-				<img src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
-			</a>
+			<a href="index.html" class="logo"></a>
 		</div>
 	</header>
 	<div class="promo">
-		<img  class="promo__title promo__title--index" src="http://placehold.it/" alt='Welcome to the gorgeous'>
+		<img  class="promo__title promo__title--index" src="/img/text-sedona-index.svg" alt='Welcome to the gorgeous'>
 	</div>
 	<main class="page-main">
 		<div class="intro">
@@ -32,52 +32,53 @@
 		<section class="features">
 			<div class="features__item">
 				<h2 class="features__title">Настоящий городок</h2>
-				<span class="features__number">-№1</span>
+				<span class="features__number">&ndash; №1 &ndash;</span>
 				<p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
 			<div class="features__pic"> 
-				<img src="http://placehold.it/320x250" width="320" height="250" alt="Sedona">
+				<img src="img/photo-city@1x.jpg" width="320" height="250" alt="Sedona">
 			</div>
 		</section>
 		<section class="advantages">
-			<div class="advantages__item">
+			<div class="advantages__item advantages__item--with-icon">
 				<h2 class="advantages__title advantages__title--living">Жилье</h2>
-				<p class="advantages__text">Рекомендуем пожить как в настоящем мотеле, все как в кино!</p>
+				<p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			</div>
-			<div class="advantages__item">
+			<div class="advantages__item advantages__item--with-icon">
 				<h2 class="advantages__title advantages__title--souvenirs">Сувениры</h2>
 				<p class="advantages__text">Не только китайского, но и местного производства!</p>
 			</div>
-			<div class="advantages__item">
+			<div class="advantages__item advantages__item--with-icon">
 				<h2 class="advantages__title advantages__title--food">Еда</h2>
-				<p class="advantages__text">сегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				<p class="advantages__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			</div>
 		</section>
 		<section class="features">
 			<div class="features__item">
 				<h2 class="features__title">Там есть мост дьявола</h2>
-				<span class="features__number">&ndash;№2&ndash;</span>
+				<span class="features__number">&ndash; №2 &ndash;</span>
 				<p class="features__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
 			</div>
 			<div class="features__pic"> 
-				<img src="http://placehold.it/320x250" width="320" height="250" alt="Canyon">
+				<img src="img/photo-4-mobile@1x.jpg" width="320" height="250" alt="Canyon"> <!-- откуда берется лишний отступ снизу после этой картинки? -->
 			</div>
 		</section>
 		<section class="advantages advantages--gray-bg">
 			<div class="advantages__item">
 				<h2 class="advantages__title">Небольшая площадь</h2>
-				<span class="features__number">&ndash;№3&ndash;</span>
+				<span class="features__number">&ndash; №3 &ndash;</span>
 				<p class="advantages__text">Все достопримечательности находятся очень близко</p>
 			</div>
 			<div class="advantages__item">
 				<h2 class="advantages__title">Красивая дорога</h2>
-				<span class="features__number">&ndash;№4&ndash;</span>
+				<span class="features__number">&ndash; №4 &ndash;</span>
 				<p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 			</div>
 			<div class="advantages__item">
 				<h2 class="advantages__title">Мало туристов</h2>
-				<span class="features__number">&ndash;№5&ndash;</span>
+				<span class="features__number">&ndash; №5 &ndash;</span>
 				<p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+				<!-- после этого блока после серой рамки идет лишний отступ в CSS -->
 			</div>
 		</section>
 	<div class="booking">
@@ -91,12 +92,12 @@
 	<footer class="page-footer">
 		<a class="page-footer__hashtag">#Visitsedona</a>
 		<div class="page-footer__social">
-			<a href="#" class="social__btn--tw">Twitter</a>
-			<a href="#" class="social__btn--fb">Facebook</a>
-			<a href="#" class="social__btn--yt">Youtube</a>
+			<a href="#" class="btn social__btn social__btn--tw" alt="Twitter"></a>
+			<a href="#" class="btn social__btn social__btn--fb" alt="Facebook"></a>
+			<a href="#" class="btn social__btn social__btn--yt" alt="Youtube"></a>
 		</div>
 		<div class="copyright">
-			Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="" alt="HTML Academy"></a> 
+			Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="/img/htmlacademy.svg" alt="HTML Academy"></a> 
 		</div>	
 	</footer>
 </body>

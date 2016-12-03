@@ -1,1 +1,25 @@
-body {background: red;}
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+
+@import "blocks/advantages";
+@import "blocks/booking";
+@import "blocks/btn";
+@import "blocks/copyright";
+@import "blocks/features";
+@import "blocks/intro";
+@import "blocks/main-nav";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/photo-item";
+@import "blocks/photos";
+@import "blocks/promo";
+@import "blocks/review-form";
+@import "blocks/video";
+@import "blocks/video-content";
+@import "blocks/video-controls";
+

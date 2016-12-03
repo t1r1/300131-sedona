@@ -3,26 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Фото и видео</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<nav class="main-nav main-nav--opened">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<nav class="main-nav main-nav--opened">
 				<ul class="main-nav__items">
-					<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-					<li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
-					<li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
-					<li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a></li>
-				</ul>			
-		</nav>
+					<li class="main-nav__item"><a href="index.html" class="main-nav__link btn">Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html" class="main-nav__link btn">Фото и видео</a></li>
+					<li class="main-nav__item"><a href="form.html" class="main-nav__link btn">Форма отзыва</a></li>
+					<li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link btn">HTML Academy</a></li>
+				</ul>	
+				<a class="main-nav__toggle"><img class "main-nav__cross-img" src="/img/icon-cross.svg"></a>		
+			</nav>
 		<div class="page_header__top-row">
-				<a href="index.html" class="logo">
-					<img src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
-				</a>
+			<a href="index.html" class="logo"></a>
 		</div>
 	</header>
 	<div class="promo">
-		<img  class="promo__title promo__title--index" src="http://placehold.it/" alt='Welcome to the gorgeous'>
+		<img class="promo__title promo__title--index" src="/img/text-sedona-index.svg" alt='Welcome to the gorgeous'>
 	</div>
 	<main class="page-main">
 		<div class="intro">
@@ -31,7 +32,7 @@
 		</div>
 		<section class="photos">
 		<article class="photo-item">
-			<a class="photo-item__pic-link"><img src="http://placehold.it/280x280" alt="Неродные просторы"></a>
+			<a class="photo-item__pic-link"><img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы"></a>
 			<div class="photo-item__footer">
 				<div class="photo-item__caption">
 					<b class="photo-item__title">Неродные просторы</b>
@@ -43,7 +44,7 @@
 				</div> 
 		</article>
 		<article class="photo-item">
-			<a class="photo-item__pic-link"><img src="http://placehold.it/280x280" alt="Местная растительность"></a>
+			<a class="photo-item__pic-link"><img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"></a>
 				<div class="photo-item__footer">
 					<div class="photo-item__caption">
 						<b class="photo-item__title">Местная растительность</b>
@@ -56,7 +57,7 @@
 			</article>
 
 		<article class="photo-item">
-			<a class="photo-item__pic-link"><img src="http://placehold.it/280x280" alt="Дорога на Север"></a>
+			<a class="photo-item__pic-link"><img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на Север"></a>
 			<div class="photo-item__footer">
 				<div class="photo-item__caption">
 					<b class="photo-item__title">Дорога на Север</b>
@@ -69,7 +70,7 @@
 		</article>
 
 		<article class="photo-item">
-			<a class="photo-item__pic-link"><img src="http://placehold.it/280x280" alt="Мост Дьявола"></a>
+			<a class="photo-item__pic-link"><img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола"></a>
 			<div class="photo-item__footer">
 				<div class="photo-item__caption">
 					<b class="photo-item__title">Мост Дьявола</b>
@@ -88,7 +89,7 @@
 	</div>
 	<div class="video-content"> 
 		<div class="video__preview">
-			<img src="http://placehold.it/320x201" alt="Видео"></div>
+			<img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео"></div>
 		<div class="video-controls">
 			<div class="video-controls__volume">
 				<div class="video-controls__volume-scale"></div>
@@ -103,12 +104,12 @@
 	<footer class="page-footer">
 		<a class="page-footer__hashtag" href="#">#Visitsedona</a>
 		<div class="page-footer__social">
-			<a href="#" class="social__btn--tw">Twitter</a>
-			<a href="#" class="social__btn--fb">Facebook</a>
-			<a href="#" class="social__btn--yt">Youtube</a>
+			<a href="#" class="btn social__btn social__btn--tw" alt="Twitter"></a>
+			<a href="#" class="btn social__btn social__btn--fb" alt="Facebook"></a>
+			<a href="#" class="btn social__btn social__btn--yt" alt="Youtube"></a>
 		</div>
 		<div class="copyright">
-			Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="" alt="HTML Academy"></a> 
+			Разработано <a class="copyright__link" href="https://htmlacademy.ru"><img src="/img/htmlacademy.svg" alt="HTML Academy"></a> 
 		</div>	
 	</footer>
 </body>

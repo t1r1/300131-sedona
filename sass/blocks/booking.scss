@@ -1,0 +1,16 @@
+.booking {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    @include capslock();
+    
+}
+
+.booking__title {
+    font-family: $font-main;
+    font-size: 21px;
+}
+
+.booking__search {
+    @include btn-style();
+}

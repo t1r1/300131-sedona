@@ -1,0 +1,18 @@
+.intro{
+    text-align: center;
+    @include capslock();
+    padding: 20px;
+
+}
+
+
+.intro__title{
+    font-size: 18px;
+    color: $base-font-color;
+    line-height: 130%;
+    text-align: center;
+    
+}
+
+.intro__text{
+}

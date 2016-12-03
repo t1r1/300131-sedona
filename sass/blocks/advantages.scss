@@ -1,0 +1,58 @@
+.advantages {
+	text-align: center;
+	@include capslock();
+	padding: 15px;
+}
+
+
+.advantages--gray-bg {
+	background-color: $light-grey;
+}
+
+.advantages__item {
+	border-bottom: 1px solid $grey;
+}
+
+.advantages__item--with-icon {
+	border-bottom: none;
+}
+.advantages__title {
+	text-align: center;
+	height: 40px;
+	margin: 8px 0;
+	line-height: 40px;
+}
+
+.advantages__item--with-icon .advantages__title {
+	padding-left: 70px;
+	background-size: 10%;
+	background-repeat: no-repeat;
+	background-position-x: 20px;
+	text-align: left;
+}
+
+
+.advantages__title--living {
+	background-image: url('../img/icon-house.svg');
+	background-position-y: 4px; 
+}
+
+.advantages__title--souvenirs { 
+	background-image: url('../img/icon-gift.svg'); 
+	background-position-y: 0; 
+}
+
+.advantages__title--food {
+	background-image: url('../img/icon-burger.svg'); 
+	background-position-y: 5px; 
+}
+
+.advantages__item--with-icon .advantages__text {
+	padding-left: 70px;
+	text-align: left;
+}
+
+.advantages__text {
+	text-align: center;
+	margin-top: 0;
+}
