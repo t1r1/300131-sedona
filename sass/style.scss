@@ -1,8 +1,8 @@
-@import "normalize";
 @import "variables";
 @import "mixins";
-@import "fonts";
+@import "normalize";
 @import "base";
+@import "fonts";
 
 @import "blocks/advantages";
 @import "blocks/booking";
@@ -23,3 +23,4 @@
 @import "blocks/video-content";
 @import "blocks/video-controls";
 
+/* надо поменять порядок импорта блоков. нужно ли btn выносить из папки blocks в общую папку? */
