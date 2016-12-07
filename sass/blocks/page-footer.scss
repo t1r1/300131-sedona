@@ -1,5 +1,11 @@
+.page-footer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
 .page-footer__social{
-	display: block;
 	width: 100%;
 	text-align: center;
 }
@@ -41,4 +47,10 @@
   @include capslock();
   margin: 20px;
 
+}
+
+@media #{$desktop-widths} {
+	.page-footer {
+		flex-wrap: nowrap;
+	}
 }

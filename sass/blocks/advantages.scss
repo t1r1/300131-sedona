@@ -3,7 +3,7 @@
 	@include capslock();
 	padding-left: 15px;
 	@include container();
-	min-height: 332px;
+	min-height: 200px;
 	width: 100%;
 	padding-bottom: 0;
 }
@@ -63,15 +63,29 @@
 
 
 @media #{$tablet-widths} {
-	.advantages__items {
+	/*.advantages__items {
 		display: table;
 		width: 100%;
 		height: 331px;
+	} */
+
+	.advantages {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+/* как растянуть этот блок по высоте? */
 	}
 
 	.advantages__item {
-		display: table-cell;
+		align-self: center;
 	}
+
+	/* .advantages__item {
+		display: table-cell;
+	} */
 }
 
 @media #{$desktop-widths} {
