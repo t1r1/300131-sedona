@@ -1,7 +1,6 @@
 .advantages {
 	text-align: center;
 	@include capslock();
-	padding-left: 15px;
 	@include container();
 	min-height: 200px;
 	width: 100%;
