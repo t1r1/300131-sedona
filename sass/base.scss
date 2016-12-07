@@ -8,25 +8,6 @@ body{
 	min-width: 320px;
 
 }
-.container {
-	width: auto;
-	padding: 0 20px;
-
-}
-
-@media (min-width: 768px) {
-	.container {
-		width: auto;
-		padding: 0 64px;
-	}
-}
-
-@media (min-width: 1088px) {
-	.container {
-		width: 960px;
-		padding: 0 64px;
-	}
-}
 
 div{
 	@include debug(); /*задает рамку для блоков, для отладки */
