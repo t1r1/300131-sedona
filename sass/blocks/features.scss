@@ -14,6 +14,7 @@
     color: $white;
 }
 
+
 @media (min-width: 320px) {
     .features {
         flex-wrap: wrap;
@@ -21,15 +22,26 @@
 }
 
 @media #{$tablet-widths} {
-    .features__item {
-        order: 2; 
+    .features:nth-of-type(3) .features__pic {
+        order: -1;
+        width: 66.6667%;
     }
-    .features {
-        flex-wrap: nowrap;
+
+    .features:nth-of-type(3) .features__item {
+        width: 33.3333%;
     }
-    .features__pic img{
+
+    .features__pic {
+        max-height: 256px;
+    }
+
+    .features__pic img {
         display: block;
         width: 100%;
         height: 100%;
+    }
+
+    .features {
+        flex-wrap: nowrap;
     }
 }

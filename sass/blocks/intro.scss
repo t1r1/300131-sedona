@@ -1,7 +1,7 @@
 .intro{
     text-align: center;
     @include capslock();
-    padding: 20px;
+    padding: 20px 0;
 
 }
 
@@ -10,9 +10,15 @@
     font-size: 18px;
     color: $base-font-color;
     line-height: 130%;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .intro__text{
+}
+
+@media #{$tablet-widths}{
+    .intro__title {
+        margin-left: 164px;
+        margin-right: 164px;
+    }
 }
