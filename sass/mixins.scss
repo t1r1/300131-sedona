@@ -47,3 +47,11 @@
         width: 960px;
     }
 } 
+
+@mixin no-outline() {
+    outline: none;
+    background: transparent;
+    &::before {
+        display: none;
+    }
+}

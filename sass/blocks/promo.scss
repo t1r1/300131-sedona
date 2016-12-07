@@ -13,3 +13,17 @@
     margin-top: 90px;
     
 }
+
+
+@media #{$tablet-widths} {
+    .promo__title {
+        height: 353px;
+    }
+    
+}
+
+@media #{$desktop-widths} {
+    .promo__title {
+        min-height: 366px;
+    }
+}

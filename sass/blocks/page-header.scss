@@ -1,18 +1,16 @@
 .page-header {
     text-align: center;
-    height: 260px;
+    min-height: 260px;
 
 }
 
 
-.page_header__top-row .logo {
-    content: url('../img/logo-sedona-mobile.svg');  /* делала background-image - не работает, как правильно задать?  */
-    height: 85px;
 
-}
 
 @media #{$tablet-widths} {
-    position: relative; 
-    min-height: 70px;
-    padding-bottom: 400px;
+    .page-header {
+        position: relative; 
+    }
+    
 }
+

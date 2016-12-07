@@ -1,9 +1,31 @@
 .features {
     @include feature-style();
     background-color: $light-blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .features__item {
     padding: 30px;
     color: $white;
+}
+
+@media (min-width: 320px) {
+    .features {
+        flex-wrap: wrap;
+    }
+}
+
+@media #{$tablet-widths} {
+    .features__item {
+        order: 2; 
+    }
+    .features {
+        flex-wrap: nowrap;
+    }
+    .features__pic {
+        width: 512px;
+    }
 }
