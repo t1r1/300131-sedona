@@ -24,14 +24,14 @@
 @media #{$tablet-widths} {
     .features:nth-of-type(3) .features__pic {
         order: -1;
-        width: 66.6667%;
     }
 
-    .features:nth-of-type(3) .features__item {
+    .features__item {
         width: 33.3333%;
     }
 
     .features__pic {
+        width: 66.6667%;
         max-height: 256px;
     }
 
@@ -44,4 +44,21 @@
     .features {
         flex-wrap: nowrap;
     }
+
+    .features__title {
+        margin: 40px 0 14px;
+        padding: 0 63px;
+        line-height: 1.5em;
+    }
+
+    .features__text {
+        padding: 0 45px;
+        line-height: 150%;
+        margin-top: 32px;
+    }
+}
+
+@media  #{$tablet-widths} {
+
+    /* сделать что-то с картинкой */
 }

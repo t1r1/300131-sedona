@@ -1,11 +1,11 @@
 .page-footer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
-
-
-.page-footer__social{
+.page-footer__social {
 	width: 100%;
 	text-align: center;
 }
@@ -39,14 +39,27 @@
 }
 
 .page-footer__hashtag{
-  display: block;
-  text-align: center;
-  font-size: 21px;
-  font-weight: bold;
-  margin: auto;
-  @include capslock();
-  margin: 20px;
+	width: 33.3333%;
+	display: flex;
+	justify-content: center;
+	@include capslock();
+	font-size: 21px;
+  	font-weight: bold;
 
+}
+
+@media #{$tablet-widths} {
+	.page-footer {
+		flex-wrap: nowrap;
+	}
+	
+	.page-footer__social {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: space-between;
+	width: 33.3333%;
+}
 }
 
 @media #{$desktop-widths} {

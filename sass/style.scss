@@ -4,23 +4,20 @@
 @import "base";
 @import "fonts";
 @import "blocks/container";
-
+@import "blocks/btn";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/promo";
+@import "blocks/intro";
+@import "blocks/features";
 @import "blocks/advantages";
 @import "blocks/booking";
-@import "blocks/btn";
-@import "blocks/copyright";
-@import "blocks/features";
-@import "blocks/intro";
-@import "blocks/main-nav";
 @import "blocks/map";
 @import "blocks/page-footer";
-@import "blocks/page-header";
-@import "blocks/photo-item";
+@import "blocks/copyright";
 @import "blocks/photos";
-@import "blocks/promo";
+@import "blocks/photo-item";
 @import "blocks/review-form";
 @import "blocks/video";
 @import "blocks/video-content";
 @import "blocks/video-controls";
-
-/* надо поменять порядок импорта блоков. нужно ли btn выносить из папки blocks в общую папку? */

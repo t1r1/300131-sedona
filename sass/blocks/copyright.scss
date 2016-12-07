@@ -1,4 +1,6 @@
 .copyright{
+    display: flex;
+    width: 33.3333%;
     text-align: center;
     margin: 20px;
     @include capslock();
