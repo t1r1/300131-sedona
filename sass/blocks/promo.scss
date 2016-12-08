@@ -1,7 +1,6 @@
 .promo{
     display: block;
     text-align: center;
-    width: 100%;
     background-image: url('../img/bg-back-mobile@1x.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
@@ -18,7 +17,7 @@
 @media #{$tablet-widths} {
     .promo {
         height: 519px;
-        background-size: 150%;
+        background-size: cover;
     }
     .promo__title {
         height: 353px;
@@ -28,6 +27,6 @@
 
 @media #{$desktop-widths} {
     .promo__title {
-        min-height: 366px;
+        height: 366px;
     }
 }
