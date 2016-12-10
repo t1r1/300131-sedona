@@ -50,10 +50,6 @@
 
 @mixin no-outline() {
     outline: none;
-    background: transparent;
-    &::before {
-        display: none;
-    }
 }
 
 @mixin bold18px() {
