@@ -77,16 +77,16 @@ form {
     font-size: 14px;
 }
 
-.review-form__field--radio {
+.review-form__field--radio, .review-form__field--check {
     height: 56px;
     margin-bottom: 16px;
 }
 
-.review-form__field--radio:last-child {
+.review-form__field--radio:last-child, .review-form__field--check:last-child {
     margin-bottom: 12px;
 } 
 
-.review-form__input--radio {
+.review-form__input--radio, .review-form__input--check {
     width: 56px; 
     height: 0;
     position: relative;
@@ -114,12 +114,35 @@ form {
     background-color: black;
 }
 
-.review-form__label--radio {
+.review-form__label--radio, .review-form__label--check {
     @include bold18px();
     align-self: center;
     margin-left: 22px;
     text-transform: none;
 }
+
+.review-form__input--check::before {
+    display: block;
+    content: ' ';
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: $light-grey;
+}
+
+.review-form__input--check:checked::after {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    display: block;
+    content: ' ';
+    width: 15px;
+    height: 8px;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    transform: rotate(-45deg);
+}
+
 
 /*.review-form {
     @media #{$tablet-widths} {
