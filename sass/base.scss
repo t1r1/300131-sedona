@@ -13,7 +13,7 @@ div{
 	@include debug(); /*задает рамку для блоков, для отладки */
 }
 
-h1, h2, h3, h4, h5, h6, b, p, a{
+h1, h2, h3, h4, h5, h6, b, p, a, input{
 	font-family: "PT Sans", arial, sans-serif;
 }
 

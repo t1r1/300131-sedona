@@ -1,5 +1,5 @@
 @mixin debug() {
-    border: 1px solid darkred; /* для обводки крупных блоков согласно заданию */
+   /* border: 1px solid darkred;  для обводки крупных блоков согласно заданию */
 
 }
 
@@ -54,4 +54,9 @@
     &::before {
         display: none;
     }
+}
+
+@mixin bold18px() {
+    font-size: 18px;
+    font-weight: bold;
 }
