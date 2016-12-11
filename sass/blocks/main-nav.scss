@@ -1,73 +1,67 @@
-.main-nav__wrapper {
-    width: 100%;
-}
-
-
-.main-nav__items {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.main-nav__link {
-    font-weight: bold;
-    border-top: 1px solid #9ac2db;
-    border-bottom: 1px solid #678fa8;
-    padding: 15px 0;
-}
-
-
-
-.main-nav__item:last-child .main-nav__link {
-     border-bottom: none;
-}
-
-.main-nav__item:first-child .main-nav__link {
-     border-top: none;
-}
 
 .main-nav__toggle {
     position: absolute;
     top: 15px;
     right: 20px;
 } 
+ 
+.main-nav {
+    background-color: $light-blue;
+}
 
-@media #{$tablet-widths} {
-    .main-nav {
-        background-color: $white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-    .main-nav__items {
-        flex-direction: row;
-        justify-content: space-around;
-        /* как их растянуть нормально на всю шиирну родительского блока? */
-    }
-    .main-nav__item {
-        background-color: $white;
-    }
+.main-nav__items {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
 
+.main-nav__item {
+  text-align: center;
+  line-height: 55px;
+  border-bottom: 1px solid grey; /*?*/
 }
 
 
-@media #{$desktop-widths} {
-    .main-nav {
-        background-color: $white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-    .main-nav__items {
-        display: flex;
-        flex-direction: row;
-    }
-    .main-nav__item {
-        background-color: $white;
-    }
+.main-nav__link {
+  @include capslock();
+  font-size: $base-font-size;
+  font-weight: bold;
+  font-family: $font-main;
+  text-decoration: none;
+  color: $white;
 }
+
+
+@media (min-width: 768px) {
+  .main-nav {
+    background-color: $white;
+  }
+  .main-nav__item {
+    background-color: $white;
+    border-bottom: none;
+    width: 20%;
+    line-height: 55px;
+  }
+  .main-nav__item:nth-child(2) {
+    margin-right: 60px;
+    
+  }
+  .main-nav__items {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .main-nav__link {
+    color: #000000;
+    font-size: $base-font-size;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .main-nav__item {
+    line-height: 53px;
+  }
+}
+

@@ -28,6 +28,7 @@ form {
     box-sizing: border-box;
     padding: 20px;
     margin: 0;
+    width: 100%;
     border-bottom: 1px solid $grey;
     @media #{$tablet-widths} {
         width: 50%;
@@ -37,14 +38,12 @@ form {
 .review-form__item:nth-child(2) {
     @media #{$tablet-widths} {
         width: 100%;
-
     }
 }
 
 .review-form__item:nth-child(4) {
     @media #{$tablet-widths} {
         width: 100%;
-        padding: 20px 75px;
     }
 
     @media #{$desktop-widths} {
@@ -57,13 +56,24 @@ form {
     @media #{$tablet-widths} {
         display: flex;
         flex-wrap: wrap;
+        padding: 0 75px;
     }
 
-    @media #{$tablet-widths} {
+    @media #{$desktop-widths} {
         flex-wrap: nowrap;
     }
     
 }
+
+.review-form__item:nth-child(4) .review-form__title {
+    @media #{$tablet-widths} {
+        position: relative;
+        top: -37px;
+        background: white;
+        margin: 0 140px;
+    }
+}
+
 
 .review-form__item:nth-child(4) .review-form__field{
     @media #{$tablet-widths} {
@@ -227,12 +237,21 @@ form {
 
 }
 .review-form__submit {
-    width: 50%;
+    width: 100%;
+    @media #{$tablet-widths} {
+        width: 50%;
+    }
 }
 
 .review-form__notes {
-    width: 50%;
-    text-align: right;
+    display: none;
+    width: 33.3333%;
+    @media #{$tablet-widths} {
+        display: block;	
+        text-align: right;
+        width: 50%;
+	}
+
 }
 .review-form__btn {
     @include btn-style();
@@ -244,5 +263,24 @@ form {
 @media #{$tablet-widths} {
 	.review-form__footer {
 		flex-wrap: nowrap;
+        flex-direction: row;
 	}
+
+    .review-form__group--tel .survey-form__error {
+        width: 40%;
+        order: -1;
+        margin-left: auto;
+        text-align: right;
+        padding: 16px 0;
+    }
+
+    .review-form__group--tel .review-form__label {
+        padding: 16px 0;
+        width: 40%;
+        order:-2;
+    }    
+    .review-form__group--email {
+        margin-bottom: 56px;
+    }
 }
+

@@ -1,9 +1,13 @@
 .page-footer {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	@media #{$tablet-widths} {
+		flex-direction: row;
+		padding: 20px 80px;
+	}
 }
 .page-footer__social {
 	width: 100%;
@@ -15,9 +19,10 @@
 	width: 46px;
 	height: 46px;
 	background-color: $light-blue;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	// margin-top: 20px;
+	// margin-bottom: 20px;
 	fill: #fff;
+	margin-right: 6px;
 }
 
 .social__btn--tw{
@@ -39,12 +44,18 @@
 }
 
 .page-footer__hashtag{
-	width: 33.3333%;
-	display: flex;
-	justify-content: center;
+	width: 100%;
+	text-align: center;
+	display: block;
 	@include capslock();
 	font-size: 21px;
   	font-weight: bold;
+	margin: 57px 0 42px;
+	@media #{$tablet-widths} {	
+		width: 33.3333%;
+		text-align: left;
+		margin: 0;
+	}
 
 }
 
