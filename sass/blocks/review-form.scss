@@ -72,6 +72,10 @@ form {
         background: white;
         margin: 0 140px;
     }
+
+     @media #{$desktop-widths} { 
+         margin: 0 300px;
+     }
 }
 
 
