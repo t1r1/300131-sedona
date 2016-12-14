@@ -1,0 +1,11 @@
+$font-main: "PT Sans", arial, sans-serif;
+
+@font-face{
+	font-family: "PT Sans";
+	src:
+		url('../fonts/ptsans.woff') format("woff");
+}
+
+
+$text-size: 14px;
+

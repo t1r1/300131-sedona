@@ -1,0 +1,16 @@
+.copyright{
+    display: block;
+    text-align: center;
+    margin: 20px;
+    @include capslock();
+    
+}
+
+.copyright__link img{
+    margin: 0px;
+    color: black;
+    width: 28px;
+    height: 35px;
+    /* как спозиционировать относительно текста "Разработано"? */
+    
+}

@@ -1,0 +1,11 @@
+.btn{
+	display: block;
+	width: 100%;
+	background-color: $light-blue;
+	@include capslock();
+	text-align: center;
+	border-style: none;
+	color: $white;
+	font-size: 18px;
+	font-family: $font-main;
+}

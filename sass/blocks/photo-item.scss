@@ -1,0 +1,29 @@
+.photo-item{
+   text-align: center;
+   border-top: 1px solid $grey;
+   padding: 20px 0;
+}
+
+.photo-item:last-child {
+    border-bottom: 1px solid $grey;
+
+}
+
+.photo-item__title {
+    @include capslock;
+}
+
+.photo-item__author{
+    margin: 4px 0;
+}
+
+.photo-item__caption {
+    text-align: left;
+    padding: 20px;
+}
+
+.photo-item__likes--count{
+    text-align: left;
+    font-weight: bold;
+    
+}
