@@ -34,7 +34,13 @@
 			</div>
 			<section class="photos">
 			<article class="photo-item">
-				<a class="photo-item__pic-link"><img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы"></a>
+				<a class="photo-item__pic-link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+						<img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+					</picture>
+					</a>
 				<div class="photo-item__footer">
 					<div class="photo-item__caption">
 						<b class="photo-item__title">Неродные просторы</b>
@@ -47,7 +53,13 @@
 					</div> 
 			</article>
 			<article class="photo-item">
-				<a class="photo-item__pic-link"><img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"></a>
+				<a class="photo-item__pic-link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+						<img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+					</picture>
+					</a>
 					<div class="photo-item__footer">
 						<div class="photo-item__caption">
 							<b class="photo-item__title">Местная растительность</b>
@@ -61,7 +73,13 @@
 				</article>
 
 			<article class="photo-item">
-				<a class="photo-item__pic-link"><img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на Север"></a>
+				<a class="photo-item__pic-link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+						<img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на Север">
+					</picture>
+				</a>
 				<div class="photo-item__footer">
 					<div class="photo-item__caption">
 						<b class="photo-item__title">Дорога на Север</b>
@@ -75,7 +93,13 @@
 			</article>
 
 			<article class="photo-item">
-				<a class="photo-item__pic-link"><img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола"></a>
+				<a class="photo-item__pic-link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+						<img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост Дьявола">
+					</picture>
+				</a>
 				<div class="photo-item__footer">
 					<div class="photo-item__caption">
 						<b class="photo-item__title">Мост Дьявола</b>
@@ -95,7 +119,12 @@
 		</div>
 		<div class="video-content"> 
 			<div class="video__preview">
-				<img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео"></div>
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+					<source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+					<img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+				<picture>
+			</div>
 			<div class="video-controls">
 				<div class="video-controls__volume">
 					<div class="video-controls__volume-scale"></div>

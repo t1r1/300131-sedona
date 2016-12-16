@@ -24,11 +24,11 @@
 				<a href="index.html" class="logo"><img src="img/logo-sedona-mobile.svg" width="101" height="83" alt="Sedona"></a>
 			</div>
 		</header>
-		<div class="promo">
+		<div class="promo"><!--
 			<picture>
 				<source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x,  img/bg-back-desktop@2x.jpg 2x">
 				<source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
-			 </picture>
+			 </picture> -->
 
 			<img  class="promo__title promo__title--index" src="img/text-sedona-index.svg" alt='Welcome to the gorgeous'>
 		</div>
@@ -44,7 +44,11 @@
 					<p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="features__pic"> 
-					<img src="img/photo-city@1x.jpg" alt="Sedona">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x,  img/photo-city@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+						<img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Sedona">
+					</picture>
 				</div>
 			</section>
 			<section class="advantages">
@@ -70,7 +74,11 @@
 					<p class="features__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
 				</div>
 				<div class="features__pic"> 
-					<img src="img/photo-4-mobile@1x.jpg" width="320" height="250" alt="Canyon">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x,  img/photo-bridge@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+						<img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Canyon">
+					</picture>
 				</div>
 			</section>
 			<section class="advantages advantages--gray-bg">
