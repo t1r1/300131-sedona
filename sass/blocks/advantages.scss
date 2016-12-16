@@ -1,13 +1,11 @@
-.advantages__wrapper {
+
+
+.advantages {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: stretch;
 	align-content: stretch;
-
-}
-
-.advantages {
 	text-align: center;
 	@include capslock();
 	@include container();

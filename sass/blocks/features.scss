@@ -8,13 +8,20 @@
 }
 
 .features__item {
-
     width: 66.6667%;
-    min-height: 256px;
-    padding: 0;
+    padding: 26px 0;
     color: $white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
 }
 
+.features__pic img {
+    width: 100%;
+    height: 100%;
+}
 
 @media (min-width: 320px) {
     .features {
@@ -33,11 +40,10 @@
 
     .features__pic {
         width: 66.6667%;
-        max-height: 256px;
+       
     }
 
     .features__pic img {
-        display: block;
         width: 100%;
         height: 100%;
     }
@@ -59,7 +65,3 @@
     }
 }
 
-@media  #{$tablet-widths} {
-
-    /* сделать что-то с картинкой */
-}
