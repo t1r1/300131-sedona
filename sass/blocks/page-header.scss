@@ -1,6 +1,19 @@
 .page-header {
     text-align: center;
-
 }
 
+.logo {
+    position: absolute; 
+    top:223px;
+    left:50%; 
+    transform: translateX(-50%);
+    }
 
+@media #{$tablet-widths} {
+    .logo {
+    position: absolute; 
+    top:0;
+    left:50%; 
+    transform: translateX(-50%);
+    }
+}
