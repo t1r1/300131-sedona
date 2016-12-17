@@ -65,19 +65,6 @@ form {
     
 }
 
-.review-form__item:nth-child(4) .review-form__title {
-    @media #{$tablet-widths} {
-        position: relative;
-        top: -37px;
-        background: white;
-        margin: 0 140px;
-    }
-
-     @media #{$desktop-widths} { 
-         margin: 0 300px;
-     }
-}
-
 
 .review-form__item:nth-child(4) .review-form__field{
     @media #{$tablet-widths} {
@@ -273,6 +260,9 @@ form {
 
 
 @media #{$tablet-widths} {
+    .review-form__title {
+        text-align: left;
+    }
 	.review-form__footer {
 		flex-wrap: nowrap;
         flex-direction: row;
@@ -294,5 +284,28 @@ form {
     .review-form__group--email {
         margin-bottom: 56px;
     }
+
+    .review-form__item:nth-child(4) .review-form__title { /*позиционирует заголовок "Посещенные достопримечательности" относительно полосы */
+        position: relative;
+        top: -37px;
+        background: white;
+        margin: 0 140px;
+    }
+
 }
 
+@media #{$desktop-widths} {
+    .review-form__title {
+        text-align: center;
+    }
+    .review-form__item:first-child .review-form__title {
+        text-align: left;
+    }
+    .review-form__item:nth-of-type(3) .review-form__title {
+        text-align: left;
+        margin-left: 78px;
+    }
+     .review-form__item:nth-child(4) .review-form__title { /*позиционирует заголовок "Посещенные достопримечательности" относительно полосы */
+          margin: 0 300px;
+     }
+}
