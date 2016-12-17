@@ -1,29 +1,58 @@
 @mixin debug() {
-    border: 1px solid darkred; /* для обводки крупных блоков согласно заданию */
+   /* border: 1px solid darkred;  для обводки крупных блоков согласно заданию */
 
 }
 
-@mixin capslock(){
+@mixin capslock() {
     text-transform: uppercase;
 }
 
 
-@mixin feature-style(){
+@mixin feature-style() {
     width: 100%;
     line-height: 100%;
     @include capslock();
     text-align: center;
 }
 
-@mixin btn-style(){
+@mixin btn-style() {
     padding: 15px 0;
     font-weight: bold;
     font-size: 21px;
-    &:hover, &focus{
+    &:hover {
 		background-color: #669ec0; 
 	}
 
 	&:active{
 		background-color: #5496bd;
     }
+}
+
+@mixin clearfix() {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+ @mixin container() {
+    width: 320px;
+    margin: 0 auto;
+    @media #{$tablet-widths} {
+        width: 640px;
+    }
+    @media #{$desktop-widths} {
+        width: 1200px;
+    }
+} 
+
+@mixin no-outline() {
+    outline: none;
+}
+
+@mixin bold18px() {
+    font-size: 18px;
+    font-weight: bold;
 }

@@ -1,0 +1,18 @@
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+@media #{$tablet-widths} {
+    .photos {
+        margin: 60px;
+    }
+}
+
+@media #{$desktop-widths} {
+    .photos {
+        margin: 40px;
+    }
+}

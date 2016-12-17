@@ -5,6 +5,7 @@ body{
 	color: $base-font-color;
 	background-color: $main-bg-color;
 	font-size: $base-font-size;
+	min-width: 320px;
 
 }
 
@@ -12,7 +13,7 @@ div{
 	@include debug(); /*задает рамку для блоков, для отладки */
 }
 
-h1, h2, h3, h4, h5, h6, b, p, a{
+h1, h2, h3, h4, h5, h6, b, p, a, input, textarea{
 	font-family: "PT Sans", arial, sans-serif;
 }
 
@@ -27,9 +28,7 @@ h2{
 
 a{
 	color: $base-font-color;
-	&:link,
 	&:hover,
-	&:focus,
 	&:active{
 		text-decoration: none;
 	}
@@ -42,4 +41,19 @@ p{
 
 img{
 	border: none;
+	max-width: 100%;
+	height: auto;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder, 
+input::-moz-placeholder,
+textarea::-moz-placeholder, 
+input:-moz-placeholder,
+textarea:-moz-placeholder, 
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder, 
+
+{
+    color: black;
 }
