@@ -34,7 +34,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .main-nav {
     background-color: $white;
   }
@@ -56,10 +56,13 @@
     color: #000000;
     font-size: $base-font-size;
   }
+  .main-nav__toggle {
+    display: none; 
+  }
 }
 
 
-@media (min-width: 1200px) {
+@media #{$desktop-widths} {
   .main-nav__item {
     line-height: 53px;
   }

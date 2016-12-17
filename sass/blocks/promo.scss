@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center 0;
     height: 389px;
+    position: relative; /* для позиционирования псевдо-элемента с треугольником */
 }
 
 .promo__title{
@@ -49,4 +50,16 @@
     @media #{$retina} {
         background-image: url("../img/bg-back-desktop@2x.jpg");
     }
+}
+
+.promo::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    bottom: 0;
+    left:0;
+    width: 320px;
+    height: 26px;
+    background-size: cover;
 }

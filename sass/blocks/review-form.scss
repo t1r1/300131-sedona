@@ -100,6 +100,7 @@ form {
 .review-form__field {
     margin: 10px 0 20px;
     display: flex;
+    position: relative;
 }
 
 .review-form__field:last-child {
@@ -165,11 +166,15 @@ form {
 .review-form__input--radio, .review-form__input--check {
     width: 56px; 
     height: 0;
+    display: none;
     position: relative;
     @include no-outline();
 }
 
-.review-form__input--radio::before {
+.review-form__input--radio + .review-form__label--radio::before {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     content: ' ';
     width: 56px;
@@ -178,7 +183,7 @@ form {
     background-color: $light-grey;
 }
 
-.review-form__input--radio:checked::after {
+.review-form__input--radio:checked + .review-form__label--radio::after {
     position: absolute;
     top: 17px;
     left: 17px;
@@ -193,11 +198,14 @@ form {
 .review-form__label--radio, .review-form__label--check {
     @include bold18px();
     align-self: center;
-    margin-left: 22px;
+    margin-left: 78px;
     text-transform: none;
 }
 
-.review-form__input--check::before {
+.review-form__input--check + .review-form__label--check::before {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     content: ' ';
     width: 56px;
@@ -206,7 +214,7 @@ form {
     background-color: $light-grey;
 }
 
-.review-form__input--check:checked::after {
+.review-form__input--check:checked + .review-form__label--check::after {
     position: absolute;
     top: 19px;
     left: 20px;

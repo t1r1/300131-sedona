@@ -1,11 +1,15 @@
 .photos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
+@media #{$mobile-only} {
+    .photos {
+        justify-content: center;
+    }
+}
 
 @media #{$tablet-widths} {
     .photos {

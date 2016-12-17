@@ -2,11 +2,16 @@
     text-align: center;
 }
 
+.page_header__top-row {
+    position: relative;
+}
+
 .logo {
     position: absolute; 
-    top:223px;
+    top:223x;
     left:50%; 
     transform: translateX(-50%);
+    z-index: 100;
     }
 
 @media #{$tablet-widths} {
