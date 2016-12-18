@@ -7,4 +7,47 @@
 	color: $white;
 	font-size: 18px;
 	font-family: $font-main;
+	vertical-align: middle;
 }
+
+
+.social__btn{
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	background-color: $light-blue;
+	margin-right: 6px;
+	line-height: 48px;
+	 &:hover {
+		background-color: #669ec0; 
+	}
+
+	&:active{
+		background-color: #5496bd;
+    }
+}
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	fill: white;
+}
+
+
+.icon--facebook {
+	height: 18px;
+	width: 19px;
+
+}
+
+
+.icon--twitter {
+	width: 17px;
+	height: 15px;
+}
+
+
+.icon--youtube {
+	width: 20px;
+	height: 14px;
+}
+
