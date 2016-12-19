@@ -65,7 +65,6 @@ form {
     
 }
 
-
 .review-form__item:nth-child(4) .review-form__field{
     @media #{$tablet-widths} {
         width: 50%;
@@ -95,8 +94,14 @@ form {
 }
 
 
-.review-form__input {
+.review-form__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.review-form__input {
+    position: relative;
     @include bold18px();
     @include no-outline();
 
@@ -115,31 +120,59 @@ form {
 
 }
 
+/* иконки с телефоном и е-мэйлом в соотв инпутах */
+.review-form__input-wrap--icon {
+    border: 1px solid red;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 58px;
+        width: 58px;
+        background-color: #e6e6e6;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.review-form__input-wrap--icon-phone {
+    &::after {
+        background-image: url(../img/icon-phone.svg);
+    }
+}
+.review-form__input-wrap--icon-email {
+    &::after {
+        background-image: url(../img/icon-mail.svg);
+    }
+}
+
 .review-form__label {
     line-height: 58px;
 }
 
-.review-form__field--vertical {
-    flex-wrap: wrap;    
-    margin-bottom: 0;
-}
 
-.review-form__field--vertical .review-form__label {
+.review-form__group--tel .review-form__label,
+.review-form__group--email .review-form__label {
     margin-left: 20px;
     height: auto;
     line-height: normal;
     padding: 4px 0 16px;
 }
-.review-form__field--vertical .review-form__input {
+.review-form__group--tel .review-form__input,
+.review-form__group--email .review-form__input  {
     margin-left: 0;
 }
 
-.review-form__field--vertical .survey-form__error {
+.review-form__group--tel .survey-form__error {
     padding: 13px 0 13px 20px;
     color: red;
     text-transform: none;
     font-size: 14px;
 }
+
 
 .review-form__field--radio, .review-form__field--check {
     height: 56px;
@@ -258,6 +291,13 @@ form {
 
 }
 
+.review-form__group--tel {
+    width: 40%;
+}
+
+.review-form__group--email {
+    width: 50%;
+}
 
 @media #{$tablet-widths} {
     .review-form__title {
