@@ -1,5 +1,6 @@
 .page-header {
     text-align: center;
+    @include container();
 }
 
 

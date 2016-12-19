@@ -1,12 +1,30 @@
 .promo{
+   
     display: block;
     text-align: center;
     background-image: url('../img/bg-back-mobile@1x.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
+    background-size: cover;
     height: 389px;
-    position: relative; /* для позиционирования псевдо-элемента с треугольником */
+    position: relative;
+    z-index: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      height: 57px;
+      width: 100%;
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+      background-position: center bottom;
+      background-size: 1200px;
+    }
 }
+
+ 
 
 .promo__title{
     width: 80%;
@@ -22,7 +40,7 @@
 
 @media #{$tablet-widths} {
     .promo {
-        height: 519px;
+        min-height: 500px;
         background-size: cover;
         @media #{$retina} {
         background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -51,7 +69,7 @@
         background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 }
-
+/*
 .promo::after {
     position: absolute;
     display: block;
@@ -62,4 +80,4 @@
     width: 320px;
     height: 26px;
     background-size: cover;
-}
+} */

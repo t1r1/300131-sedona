@@ -1,6 +1,42 @@
-.map{
-    display: block;
-    background-image: url('../img/bg-map-mobile@1x.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+
+.map {
+  width: 100%;
+  margin-top: 30px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-size: cover;
+  min-height: 350px;
 }
+
+@media #{$retina} {
+  .map {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }        
+}
+
+@media #{$tablet-widths} {
+  .map {
+    margin-top: 58px;
+    min-height: 350px;
+    background-image: url('../img/bg-map-tablet@1x.jpg');
+  }
+  @media #{$retina} {
+  .map {
+    background-image: url('../img/bg-map-tablet@2x.jpg');
+  }        
+}
+}
+
+
+@media #{$desktop-widths} {
+  .map {
+    margin-top: 37px;
+    background-image: url('../img/bg-map-desktop@1x.jpg');
+  }
+
+    @media #{$retina} {
+    .map {
+        background-image: url('../img/bg-map-desktop@2x.jpg');
+    }     
+}
+}
+
