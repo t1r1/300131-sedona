@@ -1,16 +1,26 @@
 .copyright{
     display: block;
     text-align: center;
-    margin: 20px;
+    margin: 40px 0 16px;
+    width: 100%;
+    line-height: 46px;
+    height: 46px;
     @include capslock();
-    
+    @media #{$tablet-widths} {
+        width: 33.3333%;
+        text-align: right;
+        margin: 0;
+    }
+}
+
+.copyright__link {
+    display: inline-block;
 }
 
 .copyright__link img{
     margin: 0px;
     color: black;
-    width: 28px;
-    height: 35px;
-    /* как спозиционировать относительно текста "Разработано"? */
-    
+    width: 45px;
+    margin: -18px 0;
+
 }

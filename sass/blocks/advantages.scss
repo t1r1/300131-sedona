@@ -1,7 +1,18 @@
+.advantages__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+
+}
+
 .advantages {
 	text-align: center;
 	@include capslock();
-	padding: 15px;
+	@include container();
+	padding-bottom: 0;
+	min-height: 200px; /*если убираю этот min-height и ставлю просто height, то блок едет */
 }
 
 
@@ -55,4 +66,38 @@
 .advantages__text {
 	text-align: center;
 	margin-top: 0;
+}
+
+
+@media #{$tablet-widths} {
+	.advantages__wrapper {
+		flex-wrap: nowrap;
+	}
+
+	.advantages {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 330px;
+/* как растянуть этот блок по высоте? */
+	}
+
+	.advantages__item {
+		align-self: center;
+	}
+
+
+}
+
+@media #{$desktop-widths} {
+	.advantages__items {
+		height: 332px;
+	}
+
+	.advantages__item {
+		width: 400px;
+	}
 }

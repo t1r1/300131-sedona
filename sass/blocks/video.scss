@@ -1,16 +1,29 @@
 .video { 
-    display: block;
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
     @include capslock();
+    padding: 20px; 
+
 }
 
 .video__title{
-    @include btn-style();
+    font-size: $title-font-size;
+    padding-top: 35px;
+    padding-bottom: 30px;
 
 }
 
 .video__text {
-    margin: 30px 20px;
+    font-size: $base-font-size;
 }
 
+@media #{$tablet-widths} {
+    .video {
+        margin: auto;
+        padding-top: 57px;
+        padding-bottom: 57px;
+}
+}
