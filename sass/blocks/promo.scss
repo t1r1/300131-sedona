@@ -9,6 +9,7 @@
     height: 389px;
     position: relative;
     z-index: 0;
+
     &::before {
         content: "";
         position: absolute;
@@ -16,22 +17,27 @@
         left: 0;
         bottom: 0;
         right: 0;
-      height: 57px;
-      width: 100%;
-      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
-      background-position: center bottom;
-      background-size: 1200px;
+        height: 57px;
+        width: 100%;
+        background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+        background-position: center bottom;
+        background-size: 1200px;
     }
 }
 
- 
-
-.promo__title{
-    width: 80%;
-    margin-top: 90px;
-    
+.promo--notindex {
+    height:158px;
+    overflow: hidden;
 }
 
+.promo__title {
+    margin-top: 90px;
+    width: 80%;
+}
+
+.promo__title--notindex {
+  
+}
 @media #{$retina} {
     .promo {
          background-image: url ("../img/bg-back-mobile@2x.jpg");
@@ -43,13 +49,18 @@
         min-height: 500px;
         background-size: cover;
         @media #{$retina} {
-        background-image: url("../img/bg-back-tablet@1x.jpg");
-        background-size: cover;
+            background-image: url("../img/bg-back-tablet@1x.jpg");
+            background-size: cover;
+        }
     }
+    .promo--notindex {
+         min-height:303px;
     }
-    .promo__title {
+    .promo__title--index {
         height: 353px;
     }
+
+ 
     
     @media #{$retina} {
         .promo {
@@ -62,6 +73,9 @@
     .promo {
         background-image: url("../img/bg-back-desktop@1x.jpg");
     }
+    .promo--notindex {
+        max-height: 303px;
+    }
     .promo__title {
         height: 366px;
     }
@@ -69,15 +83,3 @@
         background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 }
-/*
-.promo::after {
-    position: absolute;
-    display: block;
-    content: "";
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-    bottom: 0;
-    left:0;
-    width: 320px;
-    height: 26px;
-    background-size: cover;
-} */

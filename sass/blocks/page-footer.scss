@@ -18,27 +18,6 @@
 }
 
 
-/*
-.social__btn--tw{
-	background-image:url('../img/icon-twitter.svg');
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
-
-.social__btn--fb{
-	background-image:url('../img/icon-facebook.svg');
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
-
-.social__btn--yt{
-	background-image:url('../img/icon-youtube.svg');
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-} */
-
-
-
 .page-footer__hashtag{
 	width: 100%;
 	text-align: center;
@@ -72,5 +51,6 @@
 @media #{$desktop-widths} {
 	.page-footer {
 		flex-wrap: nowrap;
+		margin: 36px;
 	}
 }

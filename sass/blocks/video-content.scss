@@ -1,6 +1,19 @@
+.video-content {
+    position: relative;
+}
+
 .video__preview {
     display: flex;
     justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    @media #{$tablet-widths} {
+            width: 648px;
+    }
+    @media #{$desktop-widths} {
+        width: 800px;
+    }
+
 }
 
 .video__preview img {

@@ -6,9 +6,15 @@
     align-content: space-between;
     align-items: stretch;
     text-align: center;
-    padding: 20px;
     @include capslock();
+    padding-top: 37px;
+    padding-bottom: 37px;
+    margin: 0 20px;
     
+}
+
+.booking__text {
+    display: block;
 }
 
 .booking__title {
@@ -20,31 +26,43 @@
 
 .booking__search {
     @include btn-style();
+    
 }
 
 
 @media #{$tablet-widths} {
     .booking {
-        margin: auto;
-        
+        margin: 0 155px;
         padding-top: 57px;
         padding-bottom: 57px;
     }
+    .booking__text {
+        padding: 40px 10px;
+        margin: 0;
+    }
+    
     .booking__search {
-        width: 50%;
+        width: 100%;
         margin: auto;
     }
 }
 
 
 @media #{$desktop-widths} {
+    .booking {
+        margin: 0 382px;
+    }
     .booking__title {
         font-size: 30px;
     }
 
     .booking__text {
-        margin: 0 290px;
-        padding: 39px 0;
+        padding: 40px 0;
+        margin: 0;
+    }
+    .booking__search {
+        width: 100%;
+        margin: auto;
     }
 
 }

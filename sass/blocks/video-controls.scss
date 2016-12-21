@@ -1,0 +1,41 @@
+ .video-controls {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    color: #ffffff;
+    box-sizing: border-box;
+
+    @media #{$tablet-widths} {
+            width: 648px;
+            height: 92px;
+    }
+    @media #{$desktop-widths} {
+        width: 800px;
+        height: 92px;
+    }
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+ }
+
+
+ .video-controls__replay {
+    
+ }
+
+ .video-controls__volume {
+     height: 3px;
+     background-color: rgba(255, 255, 255, 0.2);
+     width: 60%;
+     @media #{$tablet-widths} { 
+         width: 390px;
+     }
+     @media #{$desktop-widths} {
+         width: 540px;
+     }
+
+ }
