@@ -14,10 +14,12 @@
 .social__btn{
 	display: inline-block;
 	width: 46px;
-	height: 48px;
+	height: 46px;
 	background-color: $light-blue;
 	margin-right: 6px;
-	line-height: 48px;
+	display:flex; 
+	justify-content: center; 
+	align-items: center; 
 	 &:hover {
 		background-color: #669ec0; 
 	}

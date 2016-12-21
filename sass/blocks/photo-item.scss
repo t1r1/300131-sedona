@@ -18,6 +18,7 @@
 
 .photo-item__title {
     @include capslock;
+    color: $title-font-color;
 
 }
 
