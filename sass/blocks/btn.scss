@@ -46,6 +46,10 @@
 .icon--like {
 	width: 20px;
 	height: 20px;
+	fill: #b2b2b2;
+	@media #{$tablet-widths} {
+		fill:#ffffff;
+	}
 }
 .icon--facebook {
 	height: 18px;
@@ -70,7 +74,7 @@
 	height: 20px;
 	fill:#5c6870;
 	@media #{$tablet-widths} {
-	fill:#ffffff;
+		fill:#ffffff;
 	}
 }
 .icon--subtitles {
@@ -78,7 +82,7 @@
 	height: 20px;
 	fill:#5c6870;
 	@media #{$tablet-widths} {
-	fill:#ffffff;
+		fill:#ffffff;
 	}
 }
 
