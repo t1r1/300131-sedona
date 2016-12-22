@@ -3,6 +3,12 @@
     @include container();
 }
 
+.page_header__top-row {
+    min-height: 56px;
+    @media #{$tablet-widths} {
+        min-height: 0;
+    }
+}
 
 .logo {
     position: absolute; 
