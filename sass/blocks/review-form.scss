@@ -130,9 +130,31 @@ form {
 
     margin-left: 14px;
     border: none;
-    background-color: $light-grey;
+    background-color: #f2f2f2;
+    &:hover {
+		background-color: #e5e5e5; 
+	}
+
+	&:focus{
+		background-color: #ffffff;
+        border: 2px solid #e6e6e6;
+    }
 
 }
+
+::-webkit-input-placeholder {
+    color:    #000;
+}
+:-moz-placeholder {
+    color:    #000;
+}
+::-moz-placeholder {
+    color:    #000;
+}
+:-ms-input-placeholder {
+    color:    #000;
+}
+
 
 /* иконки с телефоном и е-мэйлом в соотв инпутах */
 .review-form__input-wrap-icon {
@@ -214,6 +236,7 @@ form {
     background-color: $light-grey;
 }
 
+
 .review-form__input--radio:checked + .review-form__label--radio::after {
     position: absolute;
     top: 17px;
@@ -231,6 +254,7 @@ form {
     align-self: center;
     margin-left: 78px;
     text-transform: none;
+    
 }
 
 .review-form__input--check + .review-form__label--check::before {

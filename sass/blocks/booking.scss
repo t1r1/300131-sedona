@@ -26,9 +26,7 @@
 
 .booking__search {
     @include btn-style();
-    
 }
-
 
 @media #{$tablet-widths} {
     .booking {

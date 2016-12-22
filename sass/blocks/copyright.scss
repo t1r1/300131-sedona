@@ -23,5 +23,14 @@
     height: 34px;
     fill: black;
     vertical-align: middle;
+    &:hover { 
+        fill: $light-blue;
+    }
+
+    &:active {
+        fill: #b2b2b2;
+    }
+
+
 
 }
