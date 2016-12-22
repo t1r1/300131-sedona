@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function (grunt) {
   require("load-grunt-tasks")(grunt);
 
@@ -53,10 +55,10 @@ module.exports = function (grunt) {
         options: {
           optimizationLevel: 3
         },
-      files: [{
-        expand: true,
-        src: ["img/**/*.{png,jpg,gif}"]
-      }]
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
       }
     },
 
@@ -115,6 +117,10 @@ module.exports = function (grunt) {
      },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
        style: {
          files: ["sass/**/*.{scss,sass}"],
          tasks: ["sass", "postcss"]
