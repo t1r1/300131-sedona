@@ -38,25 +38,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // watch: {
-    //   style: {
-    //     files: ["sass/**/*.{scss,sass}"],*/
-    //     tasks: ["sass", "postcss"]
-    //   }
-    // },
-
-    // browserSync: {
-    //   server: {
-    //     bsFiles: {
-    //       src: ["*.html", "css/*.css"]
-    //     },
-    //     options: {
-    //       server: "."
-    //     }
-    //   }
-    // },
-
-
     csso: {
       style: {
         options: {
@@ -113,12 +94,38 @@ module.exports = function (grunt) {
         src: '*.css',
         dest: 'build/css/'
       }
-    }, 
+    },
+
+    browserSync: {
+       server: {
+        bsFiles: {
+         src: [
+           "*.html",
+           "css/*.css"
+         ]
+        },
+        options: {
+          server: ".",
+          watchTask: true,
+           notify: false,
+           open: true,
+           cors: true,
+           ui: false
+        }
+       }
+     },
+
+    watch: {
+       style: {
+         files: ["sass/**/*.{scss,sass}"],
+         tasks: ["sass", "postcss"]
+       }
+     } 
 
   });
-
+  grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
-  grunt.registerTask("build",["copy", "sass", "postcss", "csso", "imagemin", "symbols", "css_mqpacker"])
+  grunt.registerTask("build",["copy", "sass", "postcss", "csso", "imagemin", "symbols", "css_mqpacker"]);
 
 };
 
@@ -152,31 +159,7 @@ module.exports = function (grunt) {
 //       }
 //     },
 
-//     browserSync: {
-//       server: {
-//         bsFiles: {
-//           src: [
-//             "*.html",
-//             "css/*.css"
-//           ]
-//         },
-//         options: {
-//           server: ".",
-//           watchTask: true,
-//           notify: false,
-//           open: true,
-//           cors: true,
-//           ui: false
-//         }
-//       }
-//     },
-
-//     watch: {
-//       style: {
-//         files: ["sass/**/*.{scss,sass}"],*/
-//         tasks: ["sass", "postcss"]
-//       }
-//     }
+//     
 //   });
 
 //   grunt.registerTask("serve", ["browserSync", "watch"]);
