@@ -33,8 +33,15 @@ form {
     @media #{$tablet-widths} {
         width: 50%;
     }
+
+    @media #{$desktop-widths} {
+        padding: 20px 0;
+    }
 }
 
+.review-form__label--desktop {
+    display: none;
+}
 .review-form__item:nth-child(2) {
     @media #{$tablet-widths} {
         width: 100%;
@@ -87,6 +94,12 @@ form {
     margin: 10px 0 20px;
     display: flex;
     position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.review-form__field--tel, .review-form__field--email {
+    flex-wrap: wrap;
 }
 
 .review-form__field:last-child {
@@ -113,6 +126,7 @@ form {
     min-width: 1px;
 
     padding: 0 20px;
+    box-sizing: border-box;
 
     margin-left: 14px;
     border: none;
@@ -121,9 +135,9 @@ form {
 }
 
 /* иконки с телефоном и е-мэйлом в соотв инпутах */
-.review-form__input-wrap--icon {
-    border: 1px solid red;
+.review-form__input-wrap-icon {
     position: relative;
+    width: 100%;
     &::after {
         content: "";
         display: block;
@@ -138,35 +152,32 @@ form {
     }
 }
 
-.review-form__input-wrap--icon-phone {
+.review-form__input-wrap-icon--phone {
     &::after {
         background-image: url(../img/icon-phone.svg);
     }
 }
-.review-form__input-wrap--icon-email {
+.review-form__input-wrap-icon--email {
     &::after {
         background-image: url(../img/icon-mail.svg);
     }
 }
 
-.review-form__label {
-    line-height: 58px;
-}
 
-
-.review-form__group--tel .review-form__label,
-.review-form__group--email .review-form__label {
+.review-form__field--tel .review-form__label,
+.review-form__field--email .review-form__label {
     margin-left: 20px;
     height: auto;
     line-height: normal;
     padding: 4px 0 16px;
+    width: 100%;
 }
-.review-form__group--tel .review-form__input,
-.review-form__group--email .review-form__input  {
+.review-form__field--tel .review-form__input,
+.review-form__field--email .review-form__input  {
     margin-left: 0;
 }
 
-.review-form__group--tel .survey-form__error {
+.review-form__field--tel .survey-form__error {
     padding: 13px 0 13px 20px;
     color: red;
     text-transform: none;
@@ -291,13 +302,7 @@ form {
 
 }
 
-.review-form__group--tel {
-    width: 40%;
-}
 
-.review-form__group--email {
-    width: 50%;
-}
 
 @media #{$tablet-widths} {
     .review-form__title {
@@ -308,7 +313,7 @@ form {
         flex-direction: row;
 	}
 
-    .review-form__group--tel .survey-form__error {
+    .review-form__field--tel .survey-form__error {
         width: 40%;
         order: -1;
         margin-left: auto;
@@ -316,12 +321,12 @@ form {
         padding: 16px 0;
     }
 
-    .review-form__group--tel .review-form__label {
+    .review-form__field--tel .review-form__label {
         padding: 16px 0;
         width: 40%;
         order:-2;
     }    
-    .review-form__group--email {
+    .review-form__field--email {
         margin-bottom: 56px;
     }
 
@@ -331,7 +336,15 @@ form {
         background: white;
         margin: 0 140px;
     }
+      .review-form__field--tel {
+        width: 100%;
+    }
 
+    .review-form__field--email {
+        width: 100%;
+    }
+
+   
 }
 
 @media #{$desktop-widths} {
@@ -348,4 +361,50 @@ form {
      .review-form__item:nth-child(4) .review-form__title { /*позиционирует заголовок "Посещенные достопримечательности" относительно полосы */
           margin: 0 300px;
      }
+    .review-form__field--tel, .review-form__field--email {
+        width: 50%;
+        justify-content: space-between;
+    }
+    .review-form__field--tel .review-form__label,
+.review-form__field--email .review-form__label {
+    margin-left: 0;
+}
+
+    .review-form__label--desktop {
+        display: block;
+    }
+    .review-form__label--mobile {
+        display: none;
+    }
+     .review-form__field--tel .survey-form__error {
+        width: 100%;
+        padding-left: 106px;
+        text-align: left;
+    }
+
+    .review-form__field--tel .review-form__label {
+        order: 0;
+        width: auto;
+    } 
+
+    .review-form__field--email .review-form__label {
+        order: 0;
+        padding: 16px 0;
+        width: auto;
+    } 
+
+    .review-form__input-wrap-icon {
+        width: 315px;
+    }
+
+    .review-form__field--tel {
+        padding-right: 80px;
+        box-sizing: border-box;
+    }
+
+    .review-form__field--email {
+        box-sizing: border-box;
+        margin-top: 40px;
+    }
+
 }
