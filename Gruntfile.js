@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-  require('load-grunt-tasks')(grunt);
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     copy: {
@@ -8,7 +8,7 @@ module.exports = function (grunt) {
           expand: true,
           src: [
           "img/**", "*.html", "fonts/**", "js/**"],
-        dest: 'build/'
+        dest: "build"
         }]
       }
     },
@@ -17,7 +17,6 @@ module.exports = function (grunt) {
         files: {
           "build/css/style.css": "sass/style.scss"
         }
-
       }
     },
 
@@ -25,7 +24,7 @@ module.exports = function (grunt) {
       style: {
         options: {
           processors: [
-            require("autoprefixer")({browsers: [
+             require("autoprefixer")({browsers: [
               "last 1 version",
               "last 2 Chrome versions",
               "last 2 Firefox versions",
