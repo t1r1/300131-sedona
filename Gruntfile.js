@@ -84,7 +84,7 @@ module.exports = function (grunt) {
       }
     },
 
-    css_mqpacker: {
+   /* css_mqpacker: {
       main: {
         options: {
           sort: true
@@ -95,7 +95,7 @@ module.exports = function (grunt) {
         src: '*.css',
         dest: 'build/css/'
       }
-    },
+    }, */
 
     browserSync: {
        server: {
@@ -130,7 +130,7 @@ module.exports = function (grunt) {
   });
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
-  grunt.registerTask("build",["copy", "sass", "postcss", "csso", "imagemin", "symbols", "css_mqpacker"]);
+  grunt.registerTask("build",["copy", "sass", "postcss", "csso", "imagemin", "symbols", /*"css_mqpacker"*/]);
 
 };
 
