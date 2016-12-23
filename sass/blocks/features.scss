@@ -17,7 +17,9 @@
     align-items: center;
 
 }
-
+.features__title {
+    font-size: 21px;
+}
 .features__pic img {
     width: 100%;
     height: auto;
@@ -69,5 +71,12 @@
 @media #{$desktop-widths} {
     .features__pic img {
         height: auto;
+    }
+    .features__text {
+        padding: 0 67px;
+    }
+    .features__title {
+        padding: 0 130px;
+        margin-top: 10px;
     }
 }

@@ -9,11 +9,23 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           src: [
-          "img/**", "*.html", "fonts/**", "js/**"],
-        dest: "build"
+            "fonts/**",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
         }]
       }
     },
+
     sass: {
       style: {
         files: {
@@ -45,7 +57,7 @@ module.exports = function (grunt) {
           report: "gzip"
         },
         files: {
-          "build/css/style.min.css": ["css/style.css"]
+          "build/css/style.min.css": ["build/css/style.css"]
         }
       }
     },
@@ -98,23 +110,20 @@ module.exports = function (grunt) {
     }, */
 
     browserSync: {
-       server: {
+      server: {
         bsFiles: {
-         src: [
-           "*.html",
-           "css/*.css"
-         ]
+          src: ["build/*.html", "build/css/*.css"]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
-           notify: false,
-           open: true,
-           cors: true,
-           ui: false
+          notify: false,
+          open: true,
+          cors: true,
+          ui: false
         }
-       }
-     },
+      }
+    },
 
     watch: {
       html: {

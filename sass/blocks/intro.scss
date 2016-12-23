@@ -1,4 +1,4 @@
-.intro{
+.intro {
     text-align: center;
     @include capslock();
     padding: 20px 25px;
@@ -12,8 +12,7 @@
     align-self: center;
 }
 
-
-.intro__title{
+.intro__title {
     font-size: 21px;
     font-weight: bold;
     color: $title-font-color;
@@ -21,6 +20,10 @@
     align-self: center;
 }
 
+.intro--inner .intro__title{
+    font-size: 30px;
+    font-weight: bold;
+}
 
 
 @media #{$tablet-widths}{
@@ -32,9 +35,21 @@
 
 @media #{$desktop-widths} {
     .intro {
-        padding-top: 60px;
-        padding-bottom: 45px;
-        margin-left: 300px;
-        margin-right: 300px;
+        padding-top: 52px;
+        padding-bottom: 57px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 360px;
+        margin-right: 360px;
     }
+
+     .intro--inner {
+        padding-top: 87px;
+        margin-left: 379px;
+        margin-right: 379px;
+     }
+     .intro--inner .intro__title {
+         margin-bottom: 0;
+     }
+     
 }

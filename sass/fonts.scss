@@ -1,11 +1,20 @@
 $font-main: "PT Sans", arial, sans-serif;
 
-@font-face{
+@font-face {
 	font-family: "PT Sans";
 	src:
-		url('../fonts/ptsans.woff') format("woff");
+		url('../fonts/ptsans.woff') format("woff"),
+		url('../fonts/ptsans.woff2') format('woff2');
+	font-weight: 400;
+  	font-style: normal;
 }
 
 
-$text-size: 14px;
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/ptsansbold.woff') format('woff'), url('../fonts/ptsansbold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 
+$text-size: 14px;

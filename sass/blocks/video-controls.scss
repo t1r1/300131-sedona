@@ -9,8 +9,8 @@
     box-sizing: border-box;
 
     @media #{$tablet-widths} {
-            width: 648px;
-            height: 92px;
+        width: 648px;
+        height: 92px;
     }
     @media #{$desktop-widths} {
         width: 800px;

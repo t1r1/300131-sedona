@@ -8,6 +8,7 @@
   position: relative;
 }
 
+/*
 .map::after {
   content: "";
   position: absolute;
@@ -29,6 +30,13 @@
   }
 
 }
+*/
+
+.map iframe {
+  width: 100%; 
+  border: none;
+  height: 350px;
+} 
 
 @media #{$retina} {
   .map {

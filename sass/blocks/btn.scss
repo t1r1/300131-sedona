@@ -88,6 +88,7 @@
 	}
 	@media #{$tablet-widths} {
 		fill:#ffffff;
+		
 	}
 }
 .icon--subtitles {
@@ -108,7 +109,7 @@
 .icon--fullscreen {
 	width: 20px;
 	height: 20px;
-	fill:#5c6870
+	fill: #5c6870;
 
 	&:hover {
 		fill: #333333;
@@ -121,4 +122,17 @@
 	fill:#ffffff;
 	}
 
+} 
+
+
+@media #{$tablet-widths} {
+	.icon--replay {
+		&:hover {
+		fill: #ffffff;
+	}
+	&:active {
+		fill: #ffffff;
+	}
+
+	}
 }
