@@ -32,6 +32,7 @@ form {
     border-bottom: 1px solid $grey;
     @media #{$tablet-widths} {
         width: 50%;
+        padding: 20px 0;
     }
 
     @media #{$desktop-widths} {
@@ -282,6 +283,17 @@ form {
     transform: rotate(-45deg);
 }
 
+
+.review-form__input--check + .review-form__label--check:hover::before,
+.review-form__input--radio + .review-form__label--radio:hover::before {
+    background-color: #e5e5e5;
+} 
+
+.review-form__input--check:active + .review-form__label--check::before,
+.review-form__input--radio:active + .review-form__label--radio::before {
+    background-color: #d5d5d5;
+} 
+
 .review-form__input--textarea {
     width: 100%;
     @include no-outline();
@@ -294,7 +306,7 @@ form {
 
 .review-form__footer {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
    	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -330,8 +342,14 @@ form {
 
 @media #{$tablet-widths} {
     .review-form__title {
+        text-align: center;
+    }
+    .review-form__item:first-child .review-form__title,
+    .review-form__item--first .review-form__title {
         text-align: left;
     }
+    
+
 	.review-form__footer {
 		flex-wrap: nowrap;
         flex-direction: row;
@@ -374,9 +392,6 @@ form {
 @media #{$desktop-widths} {
     .review-form__title {
         text-align: center;
-    }
-    .review-form__item:first-child .review-form__title {
-        text-align: left;
     }
     .review-form__item:nth-of-type(3) .review-form__title {
         text-align: left;

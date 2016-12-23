@@ -80,6 +80,12 @@
 	width: 16px;
 	height: 20px;
 	fill:#5c6870;
+	&:hover {
+		fill: #666666;
+	}
+	&:active {
+		fill: #c1c1c1;
+	}
 	@media #{$tablet-widths} {
 		fill:#ffffff;
 	}
@@ -88,6 +94,12 @@
 	width: 32px;
 	height: 20px;
 	fill:#5c6870;
+	&:hover {
+		fill: #333333;
+	}
+	&:active {
+		fill: #c1c1c1;
+	}
 	@media #{$tablet-widths} {
 		fill:#ffffff;
 	}
@@ -96,7 +108,15 @@
 .icon--fullscreen {
 	width: 20px;
 	height: 20px;
-	fill:#5c6870;
+	fill:#5c6870
+
+	&:hover {
+		fill: #333333;
+	}
+	&:active {
+		fill: #c1c1c1;
+	}
+
 	@media #{$tablet-widths} {
 	fill:#ffffff;
 	}

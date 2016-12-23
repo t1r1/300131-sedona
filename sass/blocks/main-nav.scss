@@ -51,6 +51,17 @@
   font-family: $font-main;
   text-decoration: none;
   color: $white;
+  @media #{$tablet-widths} {
+     &:hover {
+      color: #a8c9df; 
+    }
+    &:active{
+      color: #a1968f;
+      }
+    &:active:hover {
+      color: #604e43;
+    }
+  }
 }
 
 
