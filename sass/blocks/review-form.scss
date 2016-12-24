@@ -7,10 +7,11 @@ form {
     display: flex;
     flex-wrap: wrap;
     @media #{$tablet-widths} {
-        padding: 60px;
+        padding: 0 60px;
+        border-top: none;
     }
     @media #{$desktop-widths} {
-        padding: 60px 120px 0 120px;
+        padding: 26px 120px 0 120px;
     }
 }
 
@@ -21,6 +22,9 @@ form {
 .review-form__item--first {
     @media #{$tablet-widths} {
         order: -1;
+    }
+    @media #{$desktop-widths} {
+        margin-right: 120px;
     }
 }
 
@@ -82,6 +86,7 @@ form {
 .review-form__item:nth-child(5) {
     @media #{$tablet-widths} {
         width: 100%;
+        border-bottom: none;
     }
 
 }
@@ -89,6 +94,9 @@ form {
     margin: 0 0 20px;
     text-align: center;
     @include bold18px();
+    @media #{$tablet-widths} {
+        @include bold21px();
+    }
 }
 
 .review-form__field {
@@ -138,7 +146,7 @@ form {
 
 	&:focus{
 		background-color: #ffffff;
-        border: 2px solid #e6e6e6;
+        outline: 3px solid #e5e5e5;
     }
 
 }
@@ -381,6 +389,13 @@ label {
         background: white;
         margin: 0 140px;
     }
+
+    .review-form__item:nth-child(2) .review-form__title { /*позиционирует заголовок "Контактная информация" относительно полосы */
+        position: relative;
+        top: -37px;
+        background: white;
+        margin: 0 250px;
+    }
       .review-form__field--tel {
         width: 100%;
     }
@@ -455,28 +470,96 @@ label {
 
 .review-form__modal {
     display: block;
-    border: 1px solid black;
+    width: 320px;
     position: fixed;
     background-color: #ffffff;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.2);
     @include capslock();
     text-align: center;
+    @media #{$tablet-widths} {
+        width: 401px;
+    }
     & h1 {
-        @include bold30px();
+        @include bold18px();
+        margin-top: 47px;
+        @media #{$tablet-widths} {
+            @include bold30px();
+            margin-top: 62px;
+            padding: 0 90px;
+            line-height: 39px;
+        }
+        
     }
     & p {
-        margin: 38px 57px;
+        margin: 38px 54px 29px 59px;
+        text-align: center;
+        @media #{$tablet-widths} {
+            margin: 34px 60px 40px;
+        }
     }
 
 }
 .review-form__modal--failure .review-form__btn {
     width: 180px;
-    display: inline;
+    display: block;
+    text-align: center;
+    margin: 0 auto 24px;
+    @media #{$tablet-widths} {
+        margin: 0 auto 49px;
+        width: 272px;
+    }
 }
 
 
+.review-form__modal--failure {
+    display: none;
+}
 .review-form__modal--success {
     display: none;
+    & h1 {
+        @media #{$tablet-widths} {
+            margin-top: 62px;
+            margin-bottom: 37px;
+        }
+    }
+
+    & p {
+        @media #{$tablet-widths} {
+            margin: 0 103px 39px;
+        }
+    }
+    @media #{$tablet-widths} {
+        width: 640px;
+
+    }
+}
+
+.review-form__modal-footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    @media #{$tablet-widths} {
+        padding: 44px 0;
+    }
+}
+
+.review-form__modal-footer .review-form__btn {
+    display: block;
+    text-align: center;
+    width: 280px;
+    margin: 0 20px;
+    height: 58px;
+    @media #{$tablet-widths} {
+        width: 457px;
+        margin: 0 91px;
+    }
+}
+
+.review-form__item:first-child {
+    @media #{$desktop-widths} {
+        padding-left: 79px;
+        border-left: 1px solid $grey;
+    }
 }

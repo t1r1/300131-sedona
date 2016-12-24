@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+ 
 
 }
 
@@ -46,9 +47,14 @@
         padding-top: 87px;
         margin-left: 379px;
         margin-right: 379px;
+        padding-bottom: 0px;
      }
      .intro--inner .intro__title {
          margin-bottom: 0;
+         
+     }
+     .intro--inner .intro__text {
+         margin-top: 20px;
      }
      
 }

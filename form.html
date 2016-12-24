@@ -27,7 +27,7 @@
 		</svg>
 	<div class="container">
 		<header class="page-header">
-			<nav class="main-nav main-nav--opened">
+			<nav class="main-nav main-nav--nojs"> <!--main-nav--open / main-nav--close - модификаторы для открыть/закрыть -->
 				<div class="main-nav__wrapper">
 					<ul class="main-nav__items">
 						<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
@@ -155,15 +155,17 @@
 			<h1>Ваш отзыв отправлен!</h1>
 			<p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.
 			В ближайшее время мы опубликуем его на сайте.</p>
-			<input class="review-form__btn" type="submit" value="Закрыть окно">
+			<div class="review-form__modal-footer">
+				<input class="review-form__btn btn" type="submit" value="Закрыть окно">
+			</div>
 		</div>
 		</main>
 		<footer class="page-footer">
 			<a class="page-footer__hashtag">#Visitsedona</a>
 			<div class="page-footer__social">
-				<a href="#" class="social__btn social__btn--twitter" alt="Twitter"><svg class="icon icon--twitter"><use xlink:href="#icon-twitter"></use></svg></a>
-				<a href="#" class="social__btn social__btn--facebook" alt="Facebook"><svg class="icon icon--facebook"><use xlink:href="#icon-facebook"></use></svg></a>
-				<a href="#" class="social__btn social__btn--youtube" alt="Youtube"><svg class="icon icon--facebook"><use xlink:href="#icon-youtube"></use></svg></a>
+				<a href="#" class="social__btn social__btn--twitter" alt="Twitter"><svg class="icon icon--twitter" width="17" height="15"><use xlink:href="#icon-twitter"></use></svg></a>
+				<a href="#" class="social__btn social__btn--facebook" alt="Facebook"><svg class="icon icon--facebook" width="19" height="18"><use xlink:href="#icon-facebook"></use></svg></a>
+				<a href="#" class="social__btn social__btn--youtube" alt="Youtube"><svg class="icon icon--facebook" width="20" height="15"><use xlink:href="#icon-youtube"></use></svg></a>
 			</div>
 			<div class="copyright">
 				Разработано <a class="copyright__link" href="https://htmlacademy.ru"><svg class="copyright__logo" width="37px" height="48px"><use xlink:href="#htmlacademy"></use></svg>

@@ -1,18 +1,36 @@
+.main-nav {
+    background-color: $light-blue;
+}
 
 .main-nav__toggle {
     position: absolute;
     top: 15px;
     right: 20px;
 } 
+.main-nav--open {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.main-nav--close {
+  display: none;
+}
+
+.main-nav--no-js {
+  position: static;
+  height: auto;
+  display: block;
+}
+
 .main-nav__cross-img {
   fill: white;
   width: 23px;
   height: 22px;
 }
-.main-nav {
-    background-color: $light-blue;
-}
-
 .main-nav__items {
   display: flex;
   flex-direction: column;
