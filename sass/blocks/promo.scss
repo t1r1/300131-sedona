@@ -19,9 +19,15 @@
         right: 0;
         height: 57px;
         width: 100%;
-        background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+        background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+        @media #{$tablet-widths} {
+            background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+        }
+        @media #{$desktop-widths} {
+            background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+            width: 1201px; 
+        }
         background-position: center bottom;
-        background-size: 1201px;
     }
 }
 

@@ -7,9 +7,7 @@
     justify-content: center;
 }
 
-.br {
-        display: none;
-    }
+.br { display: none;}
 
 .features__item {
     width: 66.6667%;
@@ -19,6 +17,7 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
+    box-sizing: border-box;
 
 }
 .features__title {
@@ -26,7 +25,7 @@
 }
 .features__pic img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 @media (min-width: 320px) {
@@ -44,7 +43,7 @@
     }
 
     .features__item {
-        width: 33.3333%;
+        width: 33.3334%;
         padding: 0 45px;
     }
 
@@ -86,6 +85,6 @@
         margin-top: 10px;
     }
     .features__item {
-        padding: 50px 85px;
+        padding: 34px 85px;
     }
 }

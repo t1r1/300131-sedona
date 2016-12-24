@@ -15,12 +15,13 @@
 
 .social__btn {
 	display: inline-block;
-	width: 46px;
-	height: 46px;
+	vertical-align: middle;
+	width: 48px;
+	height: 48px;
 	background-color: $light-blue;
 	margin-right: 6px;
 	@media #{$mobile-only} {
-		line-height: 46px;
+		line-height: 48px;
 	}
 	@media #{$tablet-widths} {
 		display: flex;
@@ -48,8 +49,8 @@
 }
 
 .icon--like {
-	width: 20px;
-	height: 20px;
+	width: 21px;
+	height: 21px;
 	fill: #b2b2b2;
 	@media #{$tablet-widths} {
 		fill:#a9a9a9;

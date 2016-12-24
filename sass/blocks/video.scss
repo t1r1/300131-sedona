@@ -22,8 +22,10 @@
 .video__title{
     font-family: $font-main;
     color: $title-font-color;
-    font-size: 21px;
-    font-weight: bold;
+    @include bold18px();
+    @media #{$tablet-widths} {
+        @include bold30px();
+    }
 }
 
 
@@ -44,10 +46,13 @@
 
 @media #{$desktop-widths} {
     .video {
-        margin: 0 382px;
+        margin: 68px 382px 40px 382px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .video__text {
-        padding: 40px 0;
+        padding: 29px 0;
         margin: 0;
     }
+
 }

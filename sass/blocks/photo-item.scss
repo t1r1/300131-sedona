@@ -80,12 +80,16 @@
         padding: 0;
         position: relative;
 }
-        .photo-item__footer {
-        background-color: rgba(0, 0, 0, 0.4);
+    .photo-item__likes {
+        margin-right: 8px;
+    }
+    .photo-item__footer {
+        background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
         bottom: 0;
         width: 100%;
-        padding: 20px 20px;
+        height: 80px;
+        padding: 22px 22px;
         color: #ffffff;
         box-sizing: border-box;
     }
@@ -94,7 +98,17 @@
     }
     .photo-item:last-child {
         border-bottom: none;
+    }
+    .photo-item__caption {
+        width: 50%;
+    } 
 
+    .photo-item__title {
+        margin: 4px 0;
+        display: block;
+    }
+    .photo-item__author {
+        margin: 0;
     }
 }
 
