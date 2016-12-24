@@ -21,8 +21,7 @@
 }
 
 .intro--inner .intro__title{
-    font-size: 30px;
-    font-weight: bold;
+    @include bold30px();
 }
 
 

@@ -450,3 +450,33 @@ label {
     }
 
 }
+
+/* модальные окна, скрытые по-умолчанию */
+
+.review-form__modal {
+    display: block;
+    border: 1px solid black;
+    position: fixed;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include capslock();
+    text-align: center;
+    & h1 {
+        @include bold30px();
+    }
+    & p {
+        margin: 38px 57px;
+    }
+
+}
+.review-form__modal--failure .review-form__btn {
+    width: 180px;
+    display: inline;
+}
+
+
+.review-form__modal--success {
+    display: none;
+}

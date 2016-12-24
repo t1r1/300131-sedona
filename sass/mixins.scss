@@ -10,7 +10,6 @@
 
 @mixin feature-style() {
     width: 100%;
-    line-height: 100%;
     @include capslock();
     text-align: center;
 }
@@ -45,5 +44,16 @@
 
 @mixin bold18px() {
     font-size: 18px;
+    font-weight: bold;
+}
+
+@mixin bold21px() {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+@mixin bold30px() {
+    font-size: 30px;
     font-weight: bold;
 }
