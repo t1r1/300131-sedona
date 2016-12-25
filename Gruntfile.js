@@ -95,6 +95,9 @@ module.exports = function (grunt) {
         }]
       }
     },
+    clean: { 
+      build: ["build"] 
+    },
 
    /* css_mqpacker: {
       main: {
@@ -138,7 +141,7 @@ module.exports = function (grunt) {
 
   });
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("build", ["copy", "sass", "postcss", "csso", "imagemin", "svgmin", "svgstore" /*"css_mqpacker"*/]);
+  grunt.registerTask("build", ["clean", "copy", "sass", "postcss", "csso", "imagemin", "svgmin", "svgstore" /*"css_mqpacker"*/]);
 
 };
 
