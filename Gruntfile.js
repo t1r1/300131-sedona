@@ -103,9 +103,9 @@ module.exports = function (grunt) {
         },
   
         expand: true,
-        cwd: 'css/',
-        src: '*.css',
-        dest: 'build/css/'
+        cwd: "css/",
+        src: "*.css",
+        dest: "build/css/"
       }
     }, */
 

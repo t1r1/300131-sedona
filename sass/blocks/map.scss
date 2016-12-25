@@ -48,11 +48,11 @@
   .map {
    
     min-height: 350px;
-    background-image: url('../img/bg-map-tablet@1x.jpg');
+    background-image: url("../img/bg-map-tablet@1x.jpg");
   }
   @media #{$retina} {
   .map {
-    background-image: url('../img/bg-map-tablet@2x.jpg');
+    background-image: url("../img/bg-map-tablet@2x.jpg");
   }        
 }
 }
@@ -61,12 +61,12 @@
 @media #{$desktop-widths} {
   .map {
     margin-top: 0;
-    background-image: url('../img/bg-map-desktop@1x.jpg');
+    background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 
     @media #{$retina} {
     .map {
-        background-image: url('../img/bg-map-desktop@2x.jpg');
+        background-image: url("../img/bg-map-desktop@2x.jpg");
     }     
 }
 }
