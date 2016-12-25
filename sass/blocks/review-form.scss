@@ -92,9 +92,10 @@ form {
 }
 
 .review-form__item--emotions {
+    border-bottom: none;
     @media #{$tablet-widths} {
         width: 100%;
-        border-bottom: none;
+        
         
     }
 
@@ -364,7 +365,10 @@ label {
 }
 .review-form__btn {
     @include btn-style();
-    width: 100%;
+    width: 280px;
+    margin: auto;
+    @media #{$tablet-widths} {
+    width: 100%; }
 
 }
 
