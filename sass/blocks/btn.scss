@@ -126,15 +126,9 @@
 
 } 
 
-/*
+
 @media #{$tablet-widths} {
 	.icon--replay {
-		&:hover {
 		fill: #ffffff;
 	}
-	&:active {
-		fill: #ffffff;
-	}
-
-	}
-} */
+}

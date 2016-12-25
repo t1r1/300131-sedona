@@ -81,14 +81,14 @@
 @media #{$desktop-widths} {
     .promo {
         background-image: url("../img/bg-back-desktop@1x.jpg");
-        max-height: 519px;
+        min-height: 519px;
     }
     .promo--notindex {
         max-height: 303px;
     
     }
     .promo__title {
-        height: 366px;
+        margin-top: 77px;
     }
     @media #{$retina} {
         background-image: url("../img/bg-back-desktop@2x.jpg");
