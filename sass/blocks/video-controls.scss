@@ -20,11 +20,13 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    cursor: pointer;
  }
 
 
- .video-controls__replay {
+ .video-controls__replay,
+ .video-controls__size,
+ .video-controls__subtitles {
+    cursor: pointer;
     
  }
 
@@ -38,5 +40,6 @@
      @media #{$desktop-widths} {
          width: 540px;
      }
+     cursor: pointer;
 
  }

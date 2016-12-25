@@ -11,7 +11,7 @@ form {
         border-top: none;
     }
     @media #{$desktop-widths} {
-        padding: 26px 120px 0 120px;
+        padding: 60px 120px 0 120px;
     }
 }
 
@@ -59,7 +59,8 @@ form {
     }
 
     @media #{$desktop-widths} {
-        padding: 20px 20px;
+        padding: 20px 0 60px;
+        /*padding: 20px 20px;*/
     }
 
 }
@@ -73,6 +74,8 @@ form {
 
     @media #{$desktop-widths} {
         flex-wrap: nowrap;
+        padding: 0;
+        justify-content: space-between;
     }
     
 }
@@ -80,6 +83,9 @@ form {
 .review-form__item:nth-child(4) .review-form__field{
     @media #{$tablet-widths} {
         width: 50%;
+    }
+    @media #{$desktop-widths} {
+        width: auto;
     }
 }
 
@@ -313,6 +319,12 @@ label {
     padding: 20px;
     border: none;
     resize: none;
+    @media #{$desktop-widths} {
+        
+        padding-bottom: 0;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
 }
 
 .review-form__footer {
@@ -323,6 +335,9 @@ label {
 	flex-wrap: wrap;
     @include capslock();
     justify-content: flex-end;
+    @media #{$desktop-widths} {
+        padding-top: 40px;
+    }
 
 
 }
@@ -422,6 +437,32 @@ label {
         width: 50%;
         justify-content: space-between;
     }
+    .review-form__item:nth-child(2) { 
+        /* Контактная информация */
+        margin-top: 45px;
+        padding-top: 0;
+        padding-bottom: 50px;
+        border-top: 1px solid #d6d6d6;
+    }
+    .review-form__item:nth-child(2) .review-form__title { /*позиционирует заголовок "Контактная информация" относительно полосы */
+        top: -14px;
+        margin: 0 280px;
+    }
+
+    .review-form__item:nth-child(5) .review-form__title { /*позиционирует заголовок "Контактная информация" относительно полосы */
+        position: relative;
+        top: -34px;
+        background: white;
+        margin: 0 280px;
+    }
+
+    .review-form__item:nth-child(4) .review-form__field:first-child{
+        order: -2;
+    }
+    .review-form__item:nth-child(4) .review-form__field:nth-child(3){
+        order: -1;
+    }
+
     .review-form__field--tel .review-form__label,
 .review-form__field--email .review-form__label {
     margin-left: 0;
@@ -511,6 +552,7 @@ label {
         margin: 0 auto 49px;
         width: 272px;
     }
+    cursor: pointer;
 }
 
 
@@ -555,11 +597,27 @@ label {
         width: 457px;
         margin: 0 91px;
     }
+    cursor: pointer;
 }
 
-.review-form__item:first-child {
-    @media #{$desktop-widths} {
+@media #{$desktop-widths} {
+    .review-form__item:first-child {
         padding-left: 79px;
         border-left: 1px solid $grey;
     }
+    .review-form__item--first, .review-form__item:first-child {
+        padding-top: 0;
+        border-bottom: none;
+    }
+
+    .review-form__item--first .review-form__group, 
+    .review-form__item:first-child .review-form__group {
+        margin-top: 48px;
+    }
+
+    .review-form__item--first .review-form__field,
+    .review-form__item:first-child .review-form__field {
+        margin-bottom: 12px;
+    }
+
 }
