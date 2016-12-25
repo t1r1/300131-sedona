@@ -15,6 +15,9 @@
   height:auto;
   display:block;
   z-index: 9999;
+  @media #{$tablet-widths} {
+    position: static;
+  }
 }
 
 .main-nav--close {
@@ -22,9 +25,8 @@
 }
 
 .main-nav--no-js {
-  position: static;
-  height: auto;
-  display: block;
+    height: auto;
+    display: block;
 }
 
 .main-nav__cross-img {
