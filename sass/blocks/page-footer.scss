@@ -6,6 +6,8 @@
 	align-items: center;
 }
 .page-footer__social {
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	text-align: center;
 }
@@ -18,7 +20,7 @@
 	font-size: 21px;
 	text-decoration: none;
   	font-weight: bold;
-	margin: 57px 0 42px;
+	margin: 33px 0 39px;
 	@media #{$tablet-widths} {	
 		width: 33.3334%;
 		text-align: left;
