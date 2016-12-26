@@ -1,45 +1,108 @@
  .video-controls {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
-    width: 100%;
+    height: 43px;
+    width: 280px;
+    margin: 0 20px;
     padding: 25px 15px;
     color: #ffffff;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 
     @media #{$tablet-widths} {
+        margin: 0;
         width: 648px;
         height: 92px;
     }
     @media #{$desktop-widths} {
         width: 800px;
-        height: 93px;
+        height: 92px;
+        bottom: 0;
     }
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
  }
 
-
- .video-controls__replay,
- .video-controls__size,
- .video-controls__subtitles {
-    cursor: pointer;
-    
- }
-
- .video-controls__volume {
-     height: 3px;
-     background-color: rgba(255, 255, 255, 0.2);
-     width: 60%;
-     @media #{$tablet-widths} { 
-         width: 390px;
+ .video-controls__main {
+     position: absolute;
+     bottom: -65px;
+     height: 65px;
+     width: 280px;
+     background-color: #f2f2f2;
+     display: flex;
+     align-items: center;
+     padding: 0 20px;
+     box-sizing: border-box;
+     @media #{$tablet-widths} {
+         background-color: transparent;
+         height: 92px;
+         width: 648px;
+         padding: 0 40px 0 35px;
+         bottom: 0;
      }
      @media #{$desktop-widths} {
-         width: 540px;
+         width: 800px;
+         padding: 0 35px;
      }
-     cursor: pointer;
 
  }
+
+.video-controls__volume {
+    position: relative;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 240px;
+    @media #{$tablet-widths} {
+        width: 390px;
+        margin-right: 70px;
+    }
+    @media #{$desktop-widths} {
+        width: 540px;
+    }
+}
+
+.video-controls__volume::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -4px;
+    left: 35px;
+}
+
+ .video-controls__replay {
+     flex-grow: 1;
+ }
+
+ .video-controls__subtitles {
+     margin-right: 30px;
+ }
+
+
+
+
+.video-controls__replay,
+.video-controls__size,
+.video-controls__subtitles,
+.video-controls__volume {
+    cursor: pointer;    
+}
+
+//  .video-controls__volume {
+//      height: 3px;
+//      background-color: rgba(255, 255, 255, 0.2);
+//      width: 60%;
+//      @media #{$tablet-widths} { 
+//          width: 390px;
+//      }
+//      @media #{$desktop-widths} {
+//          width: 540px;
+//      }
+//      cursor: pointer;
+
+//  }
