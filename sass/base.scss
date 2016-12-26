@@ -1,4 +1,4 @@
-body{
+body {
 	margin: 0;
 	padding: 0;
 	font-family: "PT Sans", arial, sans-serif;
@@ -6,27 +6,26 @@ body{
 	background-color: #f2f2f2;
 	font-size: $base-font-size;
 	min-width: 320px;
-
 }
 
-div{
+div {
 	@include debug(); /*задает рамку для блоков, для отладки */
 }
 
-h1, h2, h3, h4, h5, h6, b, p, a, input, textarea{
+h1, h2, h3, h4, h5, h6, b, p, a, input, textarea {
 	font-family: "PT Sans", arial, sans-serif;
 }
 
-h1{
+h1 {
 	font-size: 18px;
 	line-height: 11px;
 }
 
-h2{
+h2 {
 	font-size: 18px;
 }
 
-a{
+a {
 	color: $base-font-color;
 	&:hover,
 	&:active{
@@ -34,26 +33,13 @@ a{
 	}
 }
 
-p{
+p {
 	line-height: 180%;
 	font-size: 14px;
 }
 
-img{
+img {
 	border: none;
 	max-width: 100%;
 	height: auto;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder, 
-input::-moz-placeholder,
-textarea::-moz-placeholder, 
-input:-moz-placeholder,
-textarea:-moz-placeholder, 
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder, 
-
-{
-    color: black;
 }
