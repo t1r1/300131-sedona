@@ -135,7 +135,7 @@ module.exports = function (grunt) {
       },
        style: {
          files: ["sass/**/*.{scss,sass}"],
-         tasks: ["sass", "postcss"]
+         tasks: ["sass", "postcss", "csso"]
        }
      } 
 
