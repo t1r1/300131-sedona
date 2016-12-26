@@ -1,10 +1,12 @@
 .intro {
     text-align: center;
     @include capslock();
-    padding: 20px 25px;
+    padding: 27px 25px 15px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative; /* для позиционирования псевдоэлемента треугольника */
+    line-height: 26px;
  
 }
 
@@ -13,12 +15,29 @@
 }
 
 .intro__title {
-    font-size: 21px;
-    font-weight: bold;
+    @include bold18px();
+    line-height: 26px;
     color: $title-font-color;
-    line-height: 130%;
     align-self: center;
+     @media #{$tablet-widths} {
+        @include bold21px();
+    }
 }
+
+.intro--triangle:after {
+    content: '';
+    width: 100%;
+    bottom: -15px;
+    left: 0;
+    position: absolute;
+    height: 37px;
+    background-image: url(../img/bg-triangle.svg);
+    background-size: 100%;
+    @media #{$tablet-widths} {
+        display: none;
+    }
+}
+
 
 .intro--inner .intro__title{
     @include bold30px();

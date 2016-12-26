@@ -7,14 +7,19 @@
     align-items: stretch;
     text-align: center;
     @include capslock();
-    padding-top: 37px;
+    padding-top: 26px;
     padding-bottom: 37px;
     margin: 0 20px;
+    @media #{$tablet-widths} {
+        padding-top: 37px;
+    }
     
 }
 
 .booking__text {
+    padding-top: 6px;
     display: block;
+    line-height: 24px;
 }
 
 .booking__title {
@@ -25,6 +30,7 @@
 }
 
 .booking__search {
+    margin: 21px 0;
     @include btn-style();
 }
 
@@ -42,6 +48,7 @@
     .booking__search {
         width: 100%;
         margin: auto;
+
     }
 }
 

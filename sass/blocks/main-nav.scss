@@ -67,8 +67,7 @@
 
 .main-nav__link {
   @include capslock();
-  font-size: $base-font-size;
-  font-weight: bold;
+  @include bold18px();
   font-family: $font-main;
   text-decoration: none;
   color: $white;

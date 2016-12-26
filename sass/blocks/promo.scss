@@ -2,7 +2,7 @@
     display: block;
     text-align: center;
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-color: #ffffff;
+    background-color: $light-blue;
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
@@ -42,7 +42,7 @@
 
 .promo__title {
     margin-top: 90px;
-    width: 80%;
+    width: 88%;
 }
 
 @media #{$retina} {
