@@ -17,14 +17,27 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	text-align: left;
-	margin-top: 22px;
+	margin-top: 25px;
   max-width: 100%;
 }
 
 .advantages__item--gift,
 .advantages__item--food {
-  margin-top: 13px;
+  margin-top: 17px;
 }
+
+
+.advantages__item--gray-bg.advantages__item--space {
+  padding-bottom: 10px;
+}
+.advantages__item--gray-bg.advantages__item--road {
+  padding-top: 2px;
+  padding-bottom: 30px;
+}
+.advantages__item--gray-bg.advantages__item--tourists br {
+  display: none;
+}
+
 
 
 .advantages__item:last-of-type {
@@ -165,28 +178,28 @@
 
 @media #{$desktop-widths} {
   .advantages, .advantages__item { 
-    padding-top: 3px;
+    padding-top: 0;
   }
   .advantages {
-      margin-bottom:11px;
+      margin-bottom:20px;
       box-sizing: border-box;
   }
   .advantages__item {
-    margin: 50px 0;
+    
   }
 
   .advantages__text {
     margin-top: 19px;
   }
   .advantages__item--gray-bg {
-    padding: 0 65px 0;
+    padding: 0 80px 0;
     margin-top: 19px;
 	  
   }
   .advantages__item--gray-bg .advantages__title {
     padding: 0 150px;
     width: 58%;
-    margin-top: 24px;
+    margin-top: 26px;
   }
 
    .advantages__item--gray-bg .features__number {
@@ -200,7 +213,7 @@
 }
 
 .advantages__item--gray-bg .advantages__text {
-    margin-top: 21px;
+    margin-top: 22px;
     padding: 2px 1px;
   }
 

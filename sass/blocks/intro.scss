@@ -7,10 +7,15 @@
     justify-content: center;
     position: relative; /* для позиционирования псевдоэлемента треугольника */
     line-height: 26px;
+    box-sizing: border-box;
     @media #{$tablet-widths} {
         padding: 32px 21px 37px;
     }
  
+}
+
+.intro--triangle {
+    box-sizing: border-box;
 }
 
 .intro--inner {
@@ -26,7 +31,7 @@
     padding: 0 4px;
 }
 
-.intro__text {
+.intro .intro__text {
     align-self: center;
     text-align: center;
     line-height: 24px;
@@ -69,7 +74,6 @@
 
 
 @media #{$tablet-widths} {
-
     .intro--photo{
         padding: 52px 165px 52px;
     }
