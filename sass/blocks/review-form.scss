@@ -40,7 +40,7 @@ form {
     border-bottom: 1px solid $grey;
     @media #{$tablet-widths} {
         width: 50%;
-        padding: 20px 0;
+        padding: 56px 0;
     }
 
     @media #{$desktop-widths} {
@@ -440,7 +440,12 @@ label {
         text-align: left;
     }
     
-
+    .review-form__item--name .review-form__title {
+        padding-left: 55px;
+    }
+    .review-form__item--name .review-form__field {
+        margin: 38px 58px -17px;
+    }
 	.review-form__footer {
 		flex-wrap: nowrap;
         flex-direction: row;
@@ -452,6 +457,11 @@ label {
         margin-left: auto;
         text-align: right;
         padding: 16px 0;
+    }
+
+    .review-form__field--radio {
+        margin-top: 41px;
+        margin-bottom: -20px;
     }
 
     .review-form__field--tel .review-form__label {
@@ -483,6 +493,10 @@ label {
     .review-form__field--email {
         width: 100%;
     }
+
+    .review-form__item--contact .review-form__title {
+        margin: 20px 0 20px;
+}
 
    
 }

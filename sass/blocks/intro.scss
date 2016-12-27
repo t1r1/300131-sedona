@@ -74,6 +74,9 @@
 
 
 @media #{$tablet-widths} {
+    .intro--inner {
+    padding: 51px 140px 4px; /* для Формы */
+}
     .intro--photo{
         padding: 52px 165px 52px;
     }
