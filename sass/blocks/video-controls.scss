@@ -1,12 +1,12 @@
  .video-controls {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    bottom: 3px;
+    bottom: 0;
     left: 0;
     height: 43px;
     width: 280px;
     margin: 0 20px;
-    padding: 25px 15px;
+    padding: 22px 23px;
     color: #ffffff;
     box-sizing: border-box;
     display: flex;
@@ -17,7 +17,7 @@
     @media #{$tablet-widths} {
         margin: 0;
         width: 648px;
-        height: 92px;
+        height: 94px;
     }
     @media #{$desktop-widths} {
         width: 800px;
@@ -35,7 +35,7 @@
      background-color: #f2f2f2;
      display: flex;
      align-items: center;
-     padding: 0 20px;
+     padding: 0 25px;
      box-sizing: border-box;
      @media #{$tablet-widths} {
          background-color: transparent;

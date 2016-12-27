@@ -5,6 +5,8 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+	
 .page-footer__social {
 	display: flex;
 	justify-content: center;
@@ -29,11 +31,16 @@
 	}
 }
 
+
+.page-footer--photo .page-footer__hashtag {
+	margin: 60px 0 38px;
+}
+
 @media #{$tablet-widths} {
 	.page-footer {
 		flex-wrap: nowrap;
 		flex-direction: row;
-		padding: 33px 60px 20px;
+		padding: 37px 60px 20px;
 	}
 	
 	.page-footer__social {
@@ -42,6 +49,9 @@
 		align-content: center;
 		align-items: space-between;
 		width: 162px;	
+	}
+	.page-footer--photo .page-footer__hashtag {
+		margin: 45px 0 38px;
 	}
 }
 

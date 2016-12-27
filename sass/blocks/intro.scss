@@ -14,12 +14,22 @@
 }
 
 .intro--inner {
-    padding: 23px 21px 15px;
+    padding: 23px 21px 15px; /* переделывать уже не буду, останется для Формы */
+}
+
+.intro--photo {
+    padding: 23px 21px 14px;
+}
+
+.intro--photo .intro__text {
+    margin-top: 14px;
+    padding: 0 4px;
 }
 
 .intro__text {
     align-self: center;
     text-align: center;
+    line-height: 24px;
 }
 
 
@@ -58,7 +68,16 @@
 
 
 
+@media #{$tablet-widths} {
 
+    .intro--photo{
+        padding: 52px 165px 52px;
+    }
+    .intro--inner .intro__title {
+         margin-bottom: 20px;
+         margin-top: 20px;
+     }
+}
 
 @media #{$desktop-widths} {
     .intro {
@@ -77,7 +96,7 @@
         padding-bottom: 0px;
      }
      .intro--inner .intro__title {
-         margin-bottom: 0;
+         margin-bottom: 10px;
          
      }
      .intro--inner .intro__text {

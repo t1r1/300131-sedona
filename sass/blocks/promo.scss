@@ -21,20 +21,19 @@
         width: 100%;
         background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
         @media #{$tablet-widths} {
-            background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
-            height: 37px;
+            background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+            height: 57px;
         }
         @media #{$desktop-widths} {
             background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
             width: 1201px; 
-            height: 57px;
         }
         /* background-position: center bottom; */
     }
 }
 
 .promo--notindex {
-    height:158px; 
+    height: 157px; 
     overflow: hidden;
 
     @media #{$tablet-widths} {
@@ -67,7 +66,7 @@
         }
     }
     .promo--notindex {
-         min-height:303px;
+         min-height: 290px;
     }
     .promo__title--index {
         height: 352px;
@@ -104,8 +103,9 @@
     height: 40px;
     margin-top: 52px;
     @media #{$tablet-widths} {
-        width: 50%;
+        width: 60%;
         margin-top: 95px;
+        height: auto;
     }
     @media #{$desktop-widths} {
         width: 463px;

@@ -9,6 +9,8 @@
     margin: 0 auto 80px;
     @media #{$tablet-widths} {
             width: 648px;
+            margin: 0 auto 5px;
+
     }
     @media #{$desktop-widths} {
         width: 800px;
