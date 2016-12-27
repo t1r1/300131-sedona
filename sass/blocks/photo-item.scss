@@ -107,7 +107,7 @@
         bottom: 0;
         width: 100%;
         height: 80px;
-        padding: 22px 22px;
+        padding: 15px 23px 22px 20px;
         color: #ffffff;
         box-sizing: border-box;
     }
@@ -127,6 +127,21 @@
     }
     .photo-item__author {
         margin: 0;
+    }
+
+    .photo-item__likes {
+        margin-right: 9px;
+        margin-bottom: 0;
+    }
+
+    .photo-item__likes--first {
+        margin-right: 1px;
+        margin-bottom: 1px;
+    }
+
+    .photo-item__likes--third {
+        margin-right: 16px;
+        margin-bottom: -3px;
     }
 }
 

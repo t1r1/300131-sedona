@@ -60,11 +60,21 @@
 		flex-wrap: nowrap;
 		padding: 36px 45px 20px 132px;
 	}
+
+	.page-footer--photo {
+		padding: 9px 45px 22px 131px;
+	}
 	.page-footer__social {
-		padding-right: 80px;
+		padding-right: 89px;
 	}
 	.page-footer--form {
 		padding: 42px 45px 35px 132px;
 	}
+
+	.page-footer--photo .page-footer__hashtag {
+		margin: 40px 0 38px;
+	}
+
+
 }
 
