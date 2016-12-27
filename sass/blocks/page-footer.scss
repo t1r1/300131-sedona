@@ -10,6 +10,7 @@
 	justify-content: center;
 	width: 100%;
 	text-align: center;
+	margin-left: 5px;
 }
 
 .page-footer__hashtag {
@@ -20,7 +21,7 @@
 	font-size: 21px;
 	text-decoration: none;
   	font-weight: bold;
-	margin: 33px 0 39px;
+	margin: 34px 0 39px;
 	@media #{$tablet-widths} {	
 		width: 33.3334%;
 		text-align: left;
@@ -32,7 +33,7 @@
 	.page-footer {
 		flex-wrap: nowrap;
 		flex-direction: row;
-		padding: 20px 80px;
+		padding: 33px 60px 20px;
 	}
 	
 	.page-footer__social {

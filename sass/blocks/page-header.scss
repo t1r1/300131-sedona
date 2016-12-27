@@ -1,6 +1,10 @@
 .page-header {
     text-align: center;
     @include container();
+    @media #{$tablet-widths} {
+        width: 100%;
+        min-height: 56px;
+    }
 }
 
 .page_header__top-row {

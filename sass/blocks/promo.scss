@@ -17,17 +17,19 @@
         left: -1px;
         bottom: 0;
         right: 0;
-        height: 57px;
+        height: 26px;
         width: 100%;
         background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
         @media #{$tablet-widths} {
             background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+            height: 37px;
         }
         @media #{$desktop-widths} {
             background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
             width: 1201px; 
+            height: 57px;
         }
-        background-position: center bottom;
+        /* background-position: center bottom; */
     }
 }
 
@@ -43,6 +45,10 @@
 .promo__title {
     margin-top: 90px;
     width: 88%;
+
+    @media #{$tablet-widths} {
+        margin-top: 75px;
+    }
 }
 
 @media #{$retina} {
@@ -53,7 +59,7 @@
 
 @media #{$tablet-widths} {
     .promo {
-        min-height: 500px;
+        min-height: 520px;
         background-size: cover;
         @media #{$retina} {
             background-image: url("../img/bg-back-tablet@1x.jpg");

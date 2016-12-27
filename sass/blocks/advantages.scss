@@ -118,6 +118,10 @@
     margin-bottom: 42px;
     max-width: 100%;
   }
+
+  .advantages__item--food {
+    padding: 0 50px 20px;
+  }
   .advantages__item--gift {
     order: 2;
   }
@@ -138,31 +142,55 @@
   .advantages__item--gray-bg {
     margin-top: 16px;
     margin-bottom: 0px;
-    padding: 0 50px 20px;
+    padding: 0 20px 20px;
 	  box-sizing: border-box;
   }
   .advantages__item--gray-bg .advantages__text {
-    margin-top: 21px;
+    margin-top: 25px;
+    padding: 0 20px;
+    margin-bottom: 22px;
+  }
+
+  .advantages__text .is-hidden {
+    display: none;
+  }
+
+  .advantages__item--gray-bg .advantages__text--lasvegas {
+    padding: 0 34px;
   }
  
 }
 
+/* -------------------------- десктоп ------------------------- */
 
 @media #{$desktop-widths} {
+  .advantages, .advantages__item { 
+    padding-top: 3px;
+  }
+  .advantages {
+      margin-bottom: 9px;
+  }
   .advantages__item {
-   margin: 50px 0;
+    margin: 50px 0;
   }
   .advantages__item--gray-bg {
     padding: 0 65px 20px;
+    margin-top: 21px;
 	  
   }
   .advantages__item--gray-bg .advantages__title {
     padding: 0 150px;
-    margin-top: -5px;
+    width: 58%;
   }
 
-  .advantages {
-    margin-bottom: 15px;
+  .advantages__item--gray-bg .advantages__text--lasvegas,
+  .advantages__item--gray-bg .advantages__text--crowd {
+    margin-top: 0;
+    padding: 0;
+}
+
+.advantages__item--gray-bg .advantages__text {
+    margin-top: 21px;
   }
 
 }

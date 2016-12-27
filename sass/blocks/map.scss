@@ -5,7 +5,7 @@
   background-color: #fff;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-size: cover;
-  min-height: 350px;
+  min-height: 339px;
   position: relative;
 }
 
@@ -36,7 +36,10 @@
 .map iframe {
   width: 100%; 
   border: none;
-  height: 339px;
+  min-height: 339px;
+  @media #{$tablet-widths} {
+    min-height: 350px;
+  }
 } 
 
 @media #{$retina} {

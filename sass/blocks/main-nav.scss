@@ -89,6 +89,10 @@
   .main-nav {
     background-color: $white;
   }
+
+  .main-nav__wrapper {
+    width: 100%;
+  }
   .main-nav__item {
     background-color: $white;
     box-shadow: none;

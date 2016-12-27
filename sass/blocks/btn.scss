@@ -16,12 +16,12 @@
 
 .social__btn {
 	display: block;
-	width: 48px;
+	width: 46px;
 	height: 48px;
 	background-color: $light-blue;
 	margin-right: 6px;
 	@media #{$mobile-only} {
-		line-height: 48px;
+		line-height: 46px;
 	}
 	@media #{$tablet-widths} {
 		display: flex;
