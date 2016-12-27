@@ -75,6 +75,9 @@
     position: absolute;
     top: -4px;
     left: 35px;
+     @media #{$desktop-widths} { 
+         left: 111px;
+     }
 }
 
  .video-controls__replay {

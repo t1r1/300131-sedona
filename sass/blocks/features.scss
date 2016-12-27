@@ -58,16 +58,15 @@
     }
 }
 
+/* --------- планшет -------- */
 @media #{$tablet-widths} {
-    .features__item .br {
-        display: inline;
-    }
 
     .features__text .br {
         display: none;
     }
-    .features__item--first .br {
-        display: none;
+    .features__item--first .features__title .br,
+    .features__item--second .features__title .br {
+        display: inline;
     }
     
     .features:nth-of-type(3) .features__pic {
@@ -76,7 +75,10 @@
 
     .features__item {
         width: 33.3334%;
-        padding: 0 45px;
+        padding: 0;
+    }
+    .features__item--first {
+        padding: 0;
     }
 
     .features__pic {
@@ -95,19 +97,22 @@
     }
 
     .features__title {
-        margin: 45px 0 9px;
+        padding: 0;
+        margin: 47px 0 9px;
         line-height: 1.2;
     }
 
     .features__number {
         margin-top: 0;
     }
-    .features__item .features__text  {
-        margin-top: 20px;
+    .features__text  {
+        margin-top: 24px;
+        padding: 0 31px;
     }
     .features__item--first .features__text {
         line-height: 20px;
-        margin-top: 25px;
+        margin-top: 26px;
+        padding: 0 45px;
     }
 }
 

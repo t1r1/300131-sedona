@@ -14,18 +14,21 @@
         content: "";
         position: absolute;
         top: auto;
-        left: -1px;
+        left: 0;
         bottom: 0;
         right: 0;
         height: 26px;
-        width: 100%;
+        width: 100.6%;
         background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
         @media #{$tablet-widths} {
             background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+            width: 769px;
+            left: -1px;
             height: 57px;
         }
         @media #{$desktop-widths} {
             background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+            left: 0;
             width: 1201px; 
         }
         /* background-position: center bottom; */

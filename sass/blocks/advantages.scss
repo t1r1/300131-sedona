@@ -131,7 +131,9 @@
     margin-bottom: 42px;
     max-width: 100%;
   }
-
+.advantages__item--gray-bg.advantages__item--road {
+  padding-bottom: 20px;
+}
   .advantages__item--food {
     padding: 0 50px 20px;
   }
@@ -166,8 +168,11 @@
 
   .advantages__text .is-hidden {
     display: none;
-  }
+  } 
 
+  .advantages__item--tourists .advantages__title {
+    width: 50%;
+  }
   .advantages__item--gray-bg .advantages__text--lasvegas {
     padding: 0 34px;
   }
@@ -184,15 +189,18 @@
       margin-bottom:20px;
       box-sizing: border-box;
   }
-  .advantages__item {
-    
-  }
 
   .advantages__text {
     margin-top: 19px;
   }
+
+  .advantages.advantages--gray-bg { 
+  margin: 0; 
+  padding-bottom: 7px; 
+  }
+  
   .advantages__item--gray-bg {
-    padding: 0 80px 0;
+    padding: 0 66px;
     margin-top: 19px;
 	  
   }

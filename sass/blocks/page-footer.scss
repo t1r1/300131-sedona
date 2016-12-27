@@ -23,7 +23,8 @@
 	font-size: 21px;
 	text-decoration: none;
   	font-weight: bold;
-	margin: 34px 0 39px;
+	padding: 43px 0 40px;
+	/*margin: 30px 0 39px; */
 	@media #{$tablet-widths} {	
 		width: 33.3334%;
 		text-align: left;
@@ -40,7 +41,7 @@
 	.page-footer {
 		flex-wrap: nowrap;
 		flex-direction: row;
-		padding: 37px 60px 20px;
+		padding: 3px 60px 20px;
 	}
 	
 	.page-footer__social {
@@ -58,11 +59,11 @@
 @media #{$desktop-widths} {
 	.page-footer {
 		flex-wrap: nowrap;
-		padding: 36px 45px 20px 132px;
+		padding: 7px 45px 20px 132px;
 	}
 
 	.page-footer--photo {
-		padding: 9px 45px 22px 131px;
+		padding: 5px 45px 22px 131px;
 	}
 	.page-footer__social {
 		padding-right: 89px;
@@ -72,7 +73,7 @@
 	}
 
 	.page-footer--photo .page-footer__hashtag {
-		margin: 40px 0 38px;
+		margin: 0;
 	}
 
 
