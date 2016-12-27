@@ -111,7 +111,7 @@ form {
     @media #{$tablet-widths} {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 75px;
+        padding: 0 42px 0 97px;
     }
 
     @media #{$desktop-widths} {
@@ -132,12 +132,6 @@ form {
     }
 }
 
-.review-form__item--emotions {
-    border-bottom: none;
-    @media #{$tablet-widths} {
-        width: 100%;   
-    }
-}
 .review-form__title {
     margin: 0 0 20px;
     text-align: center;
@@ -171,10 +165,22 @@ form {
 
 .review-form__item--visited {
     padding-bottom: 13px;
+    @media #{$tablet-widths} {
+        padding-bottom: 51px;
+        & .review-form__group {
+            margin-top: -4px;
+        }
+    }
 }
 
 .review-form__item--emotions {
     padding-bottom: 31px;
+    border-bottom: none;
+    @media #{$tablet-widths} {
+        width: 100%;   
+        padding-bottom: 37px; 
+    }
+
 }
 
 .review-form__field--tel .review-form__label.review-form__label--mobile {
@@ -189,8 +195,15 @@ form {
 
 .review-form__item--contact {
     padding: 19px 18px 27px 22px;
+    @media #{$tablet-widths} {
+        padding: 0;
+        margin-bottom: 40px;
+    }
 }
 
+.review-form__group--contact {
+    margin-top: -7px;
+}
 
 
 .review-form__field--tel, .review-form__field--email {
@@ -288,6 +301,9 @@ label {
     height: 56px;
     margin-top: 4px;
     margin-bottom: 20px;
+    @media #{$tablet-widths} {
+        margin-bottom: 28px;
+    }
 }
 
 .review-form__field--radio:last-child, .review-form__field--check:last-child {
@@ -482,12 +498,23 @@ label {
 
     .review-form__item:nth-child(2) .review-form__title { /*позиционирует заголовок "Контактная информация" относительно полосы */
         position: relative;
-        top: -37px;
+        top:-18px;
         background: white;
-        margin: 0 250px;
+        padding: 60px 0 0;
     }
       .review-form__field--tel {
         width: 100%;
+        margin-bottom: 17px;
+    }
+
+    .review-form__item--emotions .review-form__title { 
+        position: relative;
+        top: -68px;
+        background: white;
+        
+    }
+    .review-form__item--emotions .review-form__field {
+        margin-top: -30px; 
     }
 
     .review-form__field--email {
@@ -495,7 +522,7 @@ label {
     }
 
     .review-form__item--contact .review-form__title {
-        margin: 20px 0 20px;
+        margin: 0;
 }
 
    
@@ -535,6 +562,7 @@ label {
         top: -32px;
         background: white;
         margin: 0 280px;
+
     }
     .review-form__item--emotions .review-form__field {
         margin-top: 20px;
