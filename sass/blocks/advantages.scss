@@ -168,20 +168,30 @@
     padding-top: 3px;
   }
   .advantages {
-      margin-bottom: 9px;
+      margin-bottom:11px;
+      box-sizing: border-box;
   }
   .advantages__item {
     margin: 50px 0;
   }
+
+  .advantages__text {
+    margin-top: 19px;
+  }
   .advantages__item--gray-bg {
-    padding: 0 65px 20px;
-    margin-top: 21px;
+    padding: 0 65px 0;
+    margin-top: 19px;
 	  
   }
   .advantages__item--gray-bg .advantages__title {
     padding: 0 150px;
     width: 58%;
+    margin-top: 24px;
   }
+
+   .advantages__item--gray-bg .features__number {
+     margin-top: 14px;
+   }
 
   .advantages__item--gray-bg .advantages__text--lasvegas,
   .advantages__item--gray-bg .advantages__text--crowd {
@@ -191,6 +201,11 @@
 
 .advantages__item--gray-bg .advantages__text {
     margin-top: 21px;
+    padding: 2px 1px;
+  }
+
+  .advantages__item--gift .br {
+    display: inline;
   }
 
 }

@@ -114,14 +114,16 @@
         left: 0; 
         top: -72px;
     }
-    .features__text {
+    .features__item .features__text {
+        margin-top: 31px;
+    }
+    .features__item--first .features__text {
         padding: 0;
         margin-top: 23px;
     }
-
     .features__title {
         padding: 0px;
-        margin-top: 20px;
+        margin-top: 19px;
         margin-bottom: 8px;
     }
     .features__item {
@@ -132,6 +134,10 @@
         padding: 34px 60px;
     }
     .features__number {
-        margin-top: 0;
+        margin-top: 3px;
+    }
+
+    .features__title .br {
+        display: inline;
     }
 }
