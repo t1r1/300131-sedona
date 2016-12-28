@@ -120,6 +120,10 @@
     .features__pic {
         position: relative;
     }
+    .features__text {
+        max-width:100%;
+        box-sizing: border-box;
+    }
     .features__pic img {
         height: auto;
         position: absolute; 
