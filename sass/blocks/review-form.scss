@@ -473,7 +473,8 @@ label {
         padding-left: 55px;
     }
     .review-form__item--name .review-form__field {
-        margin: 38px 58px -17px;
+        margin: 38px -1px -18px;
+        padding-left: 59px;
     }
 	.review-form__footer {
 		flex-wrap: nowrap;
@@ -682,6 +683,11 @@ label {
     }
     .review-form__item:nth-child(4) .review-form__field:nth-child(3){
         order: -1;
+    }
+
+     .review-form__item--name .review-form__field {
+        margin: 38px 58px -17px;
+        padding-left: 0;
     }
 
     .review-form__field--tel .review-form__label,
