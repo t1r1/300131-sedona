@@ -101,8 +101,7 @@ form {
     }
 
     @media #{$desktop-widths} {
-        padding: 0 0 60px; 
-        margin-top: 20px;
+        padding: 25px 0 27px; 
     }
 
 }
@@ -117,7 +116,8 @@ form {
     @media #{$desktop-widths} {
         flex-wrap: nowrap;
         padding: 0;
-        margin-top: -8px;
+        padding-bottom: 22px;
+        margin-top: -55px;
         justify-content: space-between;
     }
     
@@ -171,6 +171,11 @@ form {
             margin-top: -4px;
         }
     }
+    @media #{$desktop-widths} {
+        & .review-form__group {
+            padding-bottom: 22px;
+        }
+    }
 }
 
 .review-form__item--emotions {
@@ -179,6 +184,9 @@ form {
     @media #{$tablet-widths} {
         width: 100%;   
         padding-bottom: 37px; 
+    }
+    @media #{$desktop-widths} {
+        padding-bottom: 10px;
     }
 
 }
@@ -402,6 +410,10 @@ label {
         padding-top: 20px;
         margin-top: 6px; 
     }
+
+    @media #{$desktop-widths} {
+        height: 138px;
+    }
 }
 
 .review-form__footer {
@@ -433,6 +445,7 @@ label {
         display: block;	
         text-align: right;
         width: 50%;
+        padding: 10px 0;
 	}
 
 }
@@ -496,7 +509,7 @@ label {
         margin: 0 140px;
     }
 
-    .review-form__item:nth-child(2) .review-form__title { /*позиционирует заголовок "Контактная информация" относительно полосы */
+    .review-form__item:nth-child(2) .review-form__title { /*планшет: позиционирует заголовок "Контактная информация" относительно полосы */
         position: relative;
         top:-18px;
         background: white;
@@ -526,97 +539,6 @@ label {
 }
 
    
-}
-
-/* --------------------------- DESKTOP ---------------------------*/
-@media #{$desktop-widths} {
-    .review-form__title {
-        text-align: center;
-        margin-bottom: 46px; 
-    }
-    .review-form__item:nth-of-type(3) .review-form__title {
-        text-align: left;
-        margin-left: 78px;
-    }
-     .review-form__item:nth-child(4) .review-form__title { /*позиционирует заголовок "Посещенные достопримечательности" относительно полосы */
-          margin: 0 300px;
-     }
-    .review-form__field--tel, .review-form__field--email {
-        width: 50%;
-        justify-content: space-between;
-    }
-    .review-form__item:nth-child(2) { 
-        /* Контактная информация */
-        margin-top: 45px;
-        padding-top: 0;
-        padding-bottom: 58px;
-        border-top: 1px solid #d6d6d6;
-    }
-    .review-form__item:nth-child(2) .review-form__title { /*позиционирует заголовок "Контактная информация" относительно полосы */
-        top: -14px;
-        margin: 0 280px;
-    }
-
-    .review-form__item--emotions .review-form__title { 
-        position: relative;
-        top: -32px;
-        background: white;
-        margin: 0 280px;
-
-    }
-    .review-form__item--emotions .review-form__field {
-        margin-top: 20px;
-    }
-
-    .review-form__item:nth-child(4) .review-form__field:first-child{
-        order: -2;
-    }
-    .review-form__item:nth-child(4) .review-form__field:nth-child(3){
-        order: -1;
-    }
-
-    .review-form__field--tel .review-form__label,
-.review-form__field--email .review-form__label {
-    margin-left: 0;
-}
-
-    .review-form__label--desktop {
-        display: block;
-    }
-    .review-form__label--mobile {
-        display: none;
-    }
-     .review-form__field--tel .survey-form__error {
-        width: 100%;
-        padding: 23px 0 12px; 
-        text-align: center;
-    }
-
-    .review-form__field--tel .review-form__label {
-        order: 0;
-        width: auto;
-    } 
-
-    .review-form__field--email .review-form__label {
-        order: 0;
-        padding: 16px 0;
-        width: auto;
-    } 
-
-    .review-form__input-wrap-icon {
-        width: 315px;
-    }
-
-    .review-form__field--tel {
-        padding-right: 80px;
-        box-sizing: border-box;
-    }
-
-    .review-form__field--email {
-        box-sizing: border-box;
-        margin-top: 40px;
-    }
-
 }
 
 /* модальные окна, скрытые по-умолчанию */
@@ -712,7 +634,114 @@ label {
     cursor: pointer;
 }
 
+
+
+/* --------------------------- DESKTOP ---------------------------*/
 @media #{$desktop-widths} {
+    .review-form__title {
+        text-align: center;
+        margin-bottom: 46px; 
+    }
+    .review-form__item:nth-of-type(3) .review-form__title {
+        text-align: left;
+        margin-left: 78px;
+    }
+     .review-form__item:nth-child(4) .review-form__title { /*позиционирует заголовок "Посещенные достопримечательности" относительно полосы */
+          margin: 0 300px;
+          top: -92px;
+     }
+    .review-form__field--tel, .review-form__field--email {
+        width: 50%;
+        justify-content: space-between;
+    }
+    .review-form__item:nth-child(2) { 
+        /* Контактная информация */
+        margin-top: 52px;
+        padding-top: 0;
+        padding-bottom: 39px;
+        border-top: 1px solid #d6d6d6;
+    }
+    .review-form__item:nth-child(2) .review-form__title { /* десктоп, позиционирует заголовок "Контактная информация" относительно полосы */
+        top: -72px;
+        margin: 0 280px;
+    }
+
+    .review-form__item--emotions .review-form__title { 
+        position: relative;
+        top: -32px;
+        background: white;
+        margin: 0 280px;
+
+    }
+    .review-form__item--emotions .review-form__field {
+        margin-top: 20px;
+    }
+
+    .review-form__item:nth-child(4) .review-form__field:first-child{
+        order: -2;
+    }
+    .review-form__item:nth-child(4) .review-form__field:nth-child(3){
+        order: -1;
+    }
+
+    .review-form__field--tel .review-form__label,
+.review-form__field--email .review-form__label {
+    margin-left: 0;
+}
+
+    .review-form__label--desktop {
+        display: block;
+    }
+    .review-form__label--mobile {
+        display: none;
+    }
+     .review-form__field--tel .survey-form__error {
+        width: 100%;
+        padding: 23px 0 12px; 
+        text-align: center;
+    }
+
+    .review-form__field--tel .review-form__label {
+        order: 0;
+        width: auto;
+        padding: 32px 0;
+    } 
+
+    .review-form__field--email .review-form__label {
+        order: 0;
+        padding: 16px 0;
+        width: auto;
+        margin: 18px 0;
+    } 
+
+    .review-form__input-wrap-icon {
+        width: 315px;
+    }
+
+    .review-form__field--tel {
+        padding-right: 80px;
+        box-sizing: border-box;
+        margin-bottom: 26px;
+    }
+
+    .review-form__field--email {
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+
+    .review-form__item--first .review-form__field {
+        margin-bottom: 12px;
+    }
+    .review-form__field--radio {
+        margin-top: 10px;
+    }
+    .review-form__item--name .review-form__title {
+        padding: 0;
+    }
+
+    .review-form__item--name .review-form__field {
+        margin: 18px 0px 0px;
+    }
     .review-form__item:first-child {
         padding-left: 79px;
         border-left: 1px solid $grey;
@@ -726,10 +755,33 @@ label {
     .review-form__item:first-child .review-form__group {
         margin-top: 48px;
     }
-
-    .review-form__item--first .review-form__field,
-    .review-form__item:first-child .review-form__field {
+    
+    .review-form__item--first .review-form__field {
         margin-bottom: 12px;
     }
+
+     .review-form__item:first-child .review-form__field {
+        margin-bottom: -3px;
+    }
+
+    .review-form__item:first-child .review-form__group {
+        margin-top: 3px;
+    }
+    .review-form__field--tel .survey-form__error {
+        padding: 0;
+    }
+
+    .review-form__field--email .review-form__input {
+        padding: 0 19px;
+    }
+
+    .review-form__field:last-child {
+        margin-bottom: 12px;
+}
+
+    .review-form__group--contact {
+        margin-top: -25px;
+    }
+
 
 }
