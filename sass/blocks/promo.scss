@@ -23,12 +23,13 @@
         @media #{$tablet-widths} {
             background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
             width: 100%;
-            left: 0px;
+            left: 0;
             height: 57px;
         }
         @media #{$desktop-widths} {
             background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
             left: 0;
+            width: 1200px;
             
         }
         /* background-position: center bottom; */
