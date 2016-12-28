@@ -18,18 +18,18 @@
         bottom: 0;
         right: 0;
         height: 26px;
-        width: 100.6%;
+        width: 100%;
         background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
         @media #{$tablet-widths} {
             background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
-            width: 769px;
-            left: -1px;
+            width: 100%;
+            left: 0px;
             height: 57px;
         }
         @media #{$desktop-widths} {
             background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
             left: 0;
-            width: 1201px; 
+            
         }
         /* background-position: center bottom; */
     }
@@ -55,7 +55,7 @@
 
 @media #{$retina} {
     .promo {
-         background-image: url ("../img/bg-back-mobile@2x.jpg");
+         background-image: url("../img/bg-back-mobile@2x.jpg");
     }
 }
 
