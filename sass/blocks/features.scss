@@ -19,10 +19,12 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-  
-
 }
 
+.features__text {
+        max-width:100%;
+        box-sizing: border-box;
+    }
 .features__item--first {
     padding: 40px 23px 24px;
 }
@@ -119,10 +121,6 @@
 @media #{$desktop-widths} {
     .features__pic {
         position: relative;
-    }
-    .features__text {
-        max-width:100%;
-        box-sizing: border-box;
     }
     .features__pic img {
         height: auto;
