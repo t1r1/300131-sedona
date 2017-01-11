@@ -11,7 +11,6 @@ module.exports = function (grunt) {
           src: [
             "fonts/**",
             "img/**",
-            "js/**",
             "*.html"
           ],
           dest: "build"
@@ -21,6 +20,13 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           src: ["*.html"],
+          dest: "build"
+        }]
+      },
+      js: {
+        files: [{
+          expand: true,
+          src: ["js/*.js"],
           dest: "build"
         }]
       }
@@ -139,7 +145,7 @@ module.exports = function (grunt) {
        },
        js: {
         files: ["js/*.js"],
-        tasks: ["build"]
+        tasks: ["copy:js"]
       }
      } 
 
