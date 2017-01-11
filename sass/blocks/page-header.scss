@@ -14,6 +14,12 @@
     }
 }
 
+.page_header--icon { /* для js-скрипта сделан float right по-быстрому */
+    float: right;
+    display: block;
+    padding: 20px;
+}
+
 .logo {
     position: absolute; 
     top:223x;
