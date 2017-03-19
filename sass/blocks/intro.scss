@@ -57,21 +57,6 @@
     }
 }
 
-.intro--triangle:after {
-    content: '';
-    width: 100%;
-    bottom: -15px;
-    left: 0;
-    position: absolute;
-    height: 37px;
-    background-image: url(../img/bg-triangle.svg);
-    background-size: 100%;
-    @media #{$tablet-widths} {
-        display: none;
-    }
-}
-
-
 
 @media #{$tablet-widths} {
     .intro--inner {
@@ -97,7 +82,7 @@
     }
 
      .intro--inner {
-        padding-top: 91px;
+        // padding-top: 91px;
         margin-left: 379px;
         margin-right: 379px;
         padding-bottom: 0px;

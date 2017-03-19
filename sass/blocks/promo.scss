@@ -10,30 +10,30 @@
     position: relative;
     z-index: 0;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: auto;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 26px;
-        width: 100%;
-        background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
-        @media #{$tablet-widths} {
-            background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
-            width: 100%;
-            left: 0;
-            height: 57px;
-        }
-        @media #{$desktop-widths} {
-            background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
-            left: 0;
-            width: 1200px;
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: auto;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     height: 26px;
+    //     width: 100%;
+    //     background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+    //     @media #{$tablet-widths} {
+    //         background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+    //         width: 100%;
+    //         left: 0;
+    //         height: 57px;
+    //     }
+    //     @media #{$desktop-widths} {
+    //         background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+    //         left: 0;
+    //         width: 1200px;
             
-        }
-        /* background-position: center bottom; */
-    }
+    //     }
+    //     /* background-position: center bottom; */
+    // }
 }
 
 .promo--notindex {
